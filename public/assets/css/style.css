@@ -1,8 +1,164 @@
+:root {
+    --primary-light: #757ce8;
+    --primary-main: #3f50b5;
+    --primary-dark: #002884;
+    --primary-contrastText: #fff;
+    --secondary-light: #ff7961;
+    --secondary-main: #f44336;
+    --secondary-dark: #ba000d;
+    --secondary-contrastText: #000;
+}
+
 body {
-    padding: 50px;
+    padding: 0 50px;
     font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {
-    color: #00b7ff;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    cursor: pointer;
+}
+
+header {
+    height: 150px;
+}
+
+header > a > img {
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Header Section  */
+.header__button {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: var(--primary-contrastText);
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #757ce8 0%, #3f50b5 51%, #757ce8 100%);
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.header__button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__button:active {
+    transform: scale(0.95);
+}
+
+.header__ul {
+    height: 50px;
+    color: var(--primary-main);
+    cursor: pointer;
+    margin: 0 !important;
+}
+
+.header__li {
+    list-style: none;
+    line-height: 34px;
+    background-color: transparent;
+    padding: 8px 26px;
+}
+
+.header__li:hover {
+    transition: all 0.8s;
+    background-color: var(--primary-light);
+}
+
+.header_ul_subNav {
+    padding: 0 !important;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+}
+
+.header_ul_subNav li a {
+    color: #000;
+}
+
+.header__ul:hover {
+    color: var(--primary-dark);
+    transition: all 0.8s;
+}
+
+.header__ul:hover ul {
+    transition: all 0.5s;
+    animation: 0.1s linear 0.1s fadeIn forwards;
+}
+
+.header__ul:hover i {
+    transition: all 0.8s;
+    animation: 0.3s linear 0.2s rotate forwards;
+}
+
+/* End of Header Section  */
+
+/* Footer Section  */
+footer {
+    padding: 1.2em 0;
+    background: var(--primary-main);
+    margin-right: -50px;
+    margin-left: -50px;
+}
+
+footer h3 {
+    color: var(--primary-contrastText);
+    font-weight: bold;
+}
+
+footer h4 {
+    color: var(--primary-contrastText);
+    font-weight: bold;
+}
+
+footer a {
+    color: #b3bbc9;
+    font-weight: 300;
+    font-size: large;
+}
+
+footer a:hover {
+    color: var(--primary-contrastText);
+    transition: all 0.8s;
+}
+/* End of Footer Section  */
+
+@keyframes fadeIn {
+    0% {
+        transform: translate3d(-50px, 0, 0);
+        opacity: 0.05;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
 }

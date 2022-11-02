@@ -1,12 +1,14 @@
+const { introduce } = require('../data/mock');
 const express = require('express');
 const router = express.Router();
 
-var baseURL = 'client/pages/';
+const baseURL = 'client/pages/';
 // [/]
 router.get('/', function (req, res, next) {
     res.render(baseURL + 'home/index', {
         layout: 'main',
         title: 'NT E-commerce',
+        list: introduce,
     });
 });
 
