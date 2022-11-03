@@ -9,9 +9,23 @@
     --secondary-contrastText: #000;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
 body {
     padding: 0 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -31,7 +45,7 @@ header {
     height: 150px;
 }
 
-header > a > img {
+header>a>img {
     height: 100%;
     cursor: pointer;
 }
@@ -145,13 +159,83 @@ footer a:hover {
     color: var(--primary-contrastText);
     transition: all 0.8s;
 }
+
 /* End of Footer Section  */
+
+/* Start album session */
+.album__header {
+    color: #002884;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.album__btn {
+    margin-left: 0 20px;
+    border: none;
+    border-radius: 0.75rem;
+    background-color: #b3bbc9;
+    color: #001b4b;
+    padding-right: 80px;
+    width: 15%;
+    height: 40px;
+    display: inline-block;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    transition: color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+}
+
+.album__btn:hover {
+    background-color: #f09819;
+}
+
+.btn__icon {
+    color: var(--primary-contrastText)
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    border: none;
+    border-radius: 0.75rem;
+}
+
+figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+figure .album__image {
+    border: none;
+    border-radius: 0.75rem;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+figure:hover .album__image {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.album__item {
+    width: 32%;
+}
 
 @keyframes fadeIn {
     0% {
         transform: translate3d(-50px, 0, 0);
         opacity: 0.05;
     }
+
     100% {
         transform: translate3d(0, 0, 0);
         opacity: 1;
@@ -162,6 +246,7 @@ footer a:hover {
     0% {
         transform: rotate(45deg);
     }
+
     100% {
         transform: rotate(180deg);
     }

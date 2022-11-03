@@ -1,4 +1,4 @@
-const { introduce } = require('../data/mock');
+const { introduce, albumList, sectionList } = require('../data/mock');
 const express = require('express');
 const router = express.Router();
 
@@ -9,6 +9,8 @@ router.get('/', function (req, res, next) {
         layout: 'main',
         title: 'NT E-commerce',
         list: introduce,
+        albumList: albumList,
+        sectionList: sectionList,
     });
 });
 

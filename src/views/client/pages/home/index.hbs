@@ -1,1 +1,38 @@
-<h1>ávnjksndjvnjk</h1>
+<html lang='en'>
+    <body>
+        <main>
+            <h1 class='album__header text-center'>Dự án tiêu biểu NT-Ecommerce đã thực hiện</h1>
+            <section class='container'>
+                <div class='d-flex my-2 mb-3 justify-content-between'>
+                    {{#each sectionList}}
+                        <span href='#' class='album__btn py-2'>
+                            <img class='btn__icon' width={{this.size}} height={{this.size}} src={{this.icon}} />
+                            {{this.name}}
+                        </span>
+                    {{/each}}
+                </div>
+                <div class='album'>
+                    <div class='d-flex flex-row justify-content-between flex-wrap'>
+                        {{#each albumList}}
+                            <div class='album__item'>
+                                <figure>
+                                    <img class='album__image card-img' src={{this.image}} alt='logo' />
+                                </figure>
+                                <div class='card-body'>
+                                    <h5 class='card-text text-uppercase'>{{this.title}}</h5>
+                                    <p class='card-text text-uppercase'>{{this.subtitle}}</p>
+                                    <div class='d-flex justify-content-between align-items-center'>
+                                    </div>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <script src='../assets/dist/js/bootstrap.bundle.min.js'></script>
+
+    </body>
+</html>
