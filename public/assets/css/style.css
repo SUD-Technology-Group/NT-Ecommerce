@@ -11,7 +11,7 @@
 
 body {
     padding: 0 50px;
-    font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -119,6 +119,10 @@ footer {
     background: var(--primary-main);
     margin-right: -50px;
     margin-left: -50px;
+}
+
+footer section:first-child {
+    gap: 20.5rem;
 }
 
 footer h3 {
