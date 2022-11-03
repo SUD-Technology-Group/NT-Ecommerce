@@ -1,12 +1,12 @@
-<header class='d-flex justify-content-between align-items-center'>
-    <a href='#' style='height: 100%;'>
-        <img src='assets/images/logo.png' alt='logo' />
+<header class='d-flex justify-content-around align-items-center'>
+    <a href='#'>
+        <img src='https://www.saokim.com.vn/storage/2022/01/saokim-logo.svg' alt='logo' />
     </a>
-    <div class='d-flex'>
+    <div class='header_ul_container'>
         {{#each list}}
             <ul class='header__ul'>
                 <span class='header__span d-flex align-items-center'>
-                    <h3 class='mr-3' style='margin-bottom: 0 !important;'>{{this.title}}</h3>
+                    <h4 class='mr-3' style='margin-bottom: 0 !important;'>{{this.title}}</h4>
                     <i class='fa-solid fa-chevron-down'></i>
                 </span>
                 <ul class='header_ul_subNav mt-3'>
