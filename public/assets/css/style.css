@@ -9,6 +9,11 @@
     --secondary-contrastText: #000;
 }
 
+::selection {
+    color: #fee715ff;
+    background-color: #101820ff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -94,7 +99,7 @@ header > a > img {
 }
 
 .header__span h4 {
-    text-shadow: 2px 3px 6px rgba(4,15,22,0.47);
+    text-shadow: 2px 3px 6px rgba(4, 15, 22, 0.47);
 }
 
 .header__li {
