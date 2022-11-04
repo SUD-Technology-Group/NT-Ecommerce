@@ -93,6 +93,10 @@ header > a > img {
     margin: 0 !important;
 }
 
+.header__span h4 {
+    text-shadow: 2px 3px 6px rgba(4,15,22,0.47);
+}
+
 .header__li {
     list-style: none;
     line-height: 34px;
