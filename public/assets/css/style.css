@@ -1,7 +1,7 @@
 :root {
     --primary-light: #757ce8;
-    --primary-main: #3f50b5;
     --primary-dark: #002884;
+    --primary-main: #002884;
     --primary-contrastText: #fff;
     --secondary-light: #ff7961;
     --secondary-main: #f44336;
@@ -190,18 +190,12 @@ footer a:hover {
 }
 
 .album__btn {
-    margin-left: 0 20px;
     border: none;
     border-radius: 0.75rem;
     background-color: #b3bbc9;
     color: #001b4b;
-    padding-right: 80px;
-    width: 15%;
-    height: 40px;
-    display: inline-block;
     font-weight: 500;
     white-space: nowrap;
-    padding: 0.375rem 0.75rem;
     line-height: 1.5;
     font-size: 1rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
@@ -242,10 +236,6 @@ figure .album__image {
 figure:hover .album__image {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-.album__item {
-    width: 32%;
 }
 
 @keyframes fadeIn {
