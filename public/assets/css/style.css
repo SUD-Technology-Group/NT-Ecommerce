@@ -91,7 +91,7 @@ header > a > img {
 }
 
 .header__ul {
-    height: 28px;
+    height: 45px;
     width: 180px;
     color: var(--primary-main);
     cursor: pointer;
