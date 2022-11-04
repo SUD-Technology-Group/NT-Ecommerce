@@ -106,7 +106,7 @@ const albumList = [
     { image: '/assets/images/qp.jpg', title: 'Quang Phúc Group', subtitle: 'Nhận diện, Website' },
 ];
 
-const sectionList = [
+const projectList = [
     { icon: '/assets/images/icon_cat3.png', size: '23', name: 'Nhận diện' },
     { icon: '/assets/images/icon_cat5.png', size: '23', name: 'Sản phẩm số' },
     { icon: '/assets/images/icon_cat2.png', size: '23', name: 'Bao bì' },
@@ -115,8 +115,66 @@ const sectionList = [
     { icon: '/assets/images/icon_cat1.png', size: '23', name: 'Khác' },
 ];
 
+const serviceList = [
+    {
+        serviceImage: '/assets/images/dich-vu-tu-van-thuong-hieu-sao-kim-branding.jpg',
+        serviceName: 'Tư vấn thương hiệu',
+        feature: [
+            { name: 'Chiến lược thương hiệu', href: '' },
+            { name: 'Tái định vị thương hiệu', href: '' },
+            { name: 'Ra mắt thương hiệu', href: '' },
+            { name: 'Quy chế thương hiệu', href: '' },
+            { name: 'Mở rộng thương hiệu', href: '' },
+            { name: 'Định giá thương hiệu', href: '' },
+            { name: 'Brand Advisor', href: '' },
+            { name: 'Branding Pack', href: '' },
+        ],
+    },
+    {
+        serviceImage: '/assets/images/dich-vu-sang-tao-thuong-hieu-sao-kim-branding.jpg',
+        serviceName: 'Thiết kế thương hiệu',
+        feature: [
+            { name: 'Thiết kế Logo', href: '' },
+            { name: 'Nhận diện thương hiệu', href: '' },
+            { name: 'Đặt tên thương hiệu', href: '' },
+            { name: 'Nhận diện văn phòng', href: '' },
+            { name: 'Sáng tác Slogan', href: '' },
+            { name: 'Nhận diện điểm bán', href: '' },
+            { name: 'Thiết kế Mascot', href: '' },
+            { name: 'Rebranding', href: '' },
+        ],
+    },
+    {
+        serviceImage: '/assets/images/dich-vu-thiet-ke-sang-tao-thuong-hieu-so-sao-kim-branding.jpg',
+        serviceName: 'Thương hiệu số',
+        feature: [
+            { name: 'Thiết kế Website', href: '' },
+            { name: 'UI/UX Design', href: '' },
+            { name: 'Nhận diện số', href: '' },
+            { name: 'Online Sate Kit', href: '' },
+            { name: 'Landing page', href: '' },
+            { name: 'Giải pháp VR360', href: '' },
+            { name: 'Brand Guidelines', href: '' },
+        ],
+    },
+    {
+        serviceImage: '/assets/images/dich-vu-thiet-ke-bao-bi-nhan-mac-sao-kim-branding.jpg',
+        serviceName: 'Bao bì nhãn mác',
+        feature: [
+            { name: 'Bao bì sản phẩm', href: '' },
+            { name: 'Nhãn mác sản phẩm', href: '' },
+            { name: 'Kiểu dáng công nghiệp', href: '' },
+            { name: 'Nhãn mác thực phẩm', href: '' },
+            { name: 'Nhãn mác mỹ phẩm', href: '' },
+            { name: 'Nhãn mác dược phẩm', href: '' },
+            { name: 'Nhãn mác đồ uống', href: '' },
+        ],
+    },
+];
+
 module.exports = {
     introduce,
     albumList,
-    sectionList,
+    projectList,
+    serviceList,
 };
