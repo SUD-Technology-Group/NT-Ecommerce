@@ -189,8 +189,8 @@ footer a:hover {
 .list__item {
     border-top: none;
     border-right: none;
-    border-left: none;
-    padding-left: 0px;
+    /* border-left: none; */
+    padding-left: 2px;
     padding-right: 0px;
     width: 45%;
 }
