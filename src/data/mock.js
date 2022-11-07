@@ -3,27 +3,27 @@ const introduce = [
         title: 'Branding',
         item: [
             {
-                title: 'Tư vấn thương hiệu',
+                title: 'Tư Vấn Thương Hiệu',
                 href: '#',
             },
             {
-                title: 'Thiết kế thương hiệu',
+                title: 'Thiết Kế Thương Hiệu',
                 href: '#',
             },
             {
-                title: 'Nhận dạng thương hiệu số',
+                title: 'Nhận Dạng Thương Hiệu Số',
                 href: '#',
             },
             {
-                title: 'Ấn phẩm marketing',
+                title: 'Ấn Phẩm Marketing',
                 href: '#',
             },
             {
-                title: 'Thiết kế bao bì nhãn mác',
+                title: 'Thiết Kế Bao Bì Nhãn Mác',
                 href: '#',
             },
             {
-                title: 'Bản quyền & Giấy phép',
+                title: 'Bản Quyền & Giấy Phép',
                 href: '#',
             },
         ],
@@ -32,7 +32,7 @@ const introduce = [
         title: 'Marcom',
         item: [
             {
-                title: 'Truyền thông',
+                title: 'Truyền Thông',
                 href: '#',
             },
             {
@@ -48,41 +48,41 @@ const introduce = [
                 href: '#',
             },
             {
-                title: 'Quà tặng thương hiệu',
+                title: 'Quà Tặng Thương Hiệu',
                 href: '#',
             },
         ],
     },
     {
-        title: 'Giải pháp',
+        title: 'Giải Pháp',
         item: [
             {
-                title: 'Trọn gói',
+                title: 'Trọn Gói',
                 href: '#',
             },
             {
-                title: 'Theo ngành',
+                title: 'Theo Ngành',
                 href: '#',
             },
         ],
     },
     {
-        title: 'Về Chúng tôi',
+        title: 'Về Chúng Tôi',
         item: [
             {
-                title: 'Giới thiệu',
+                title: 'Giới Thiệu',
                 href: '#',
             },
             {
-                title: 'Hồ sơ năng lực',
+                title: 'Hồ Sơ Năng Lực',
                 href: '#',
             },
             {
-                title: 'Đội ngũ nhân sự',
+                title: 'Đội Ngũ Nhân Sự',
                 href: '#',
             },
             {
-                title: 'Thông tin tuyển dụng',
+                title: 'Thông Tin Tuyển Dụng',
                 href: '#',
             },
         ],
