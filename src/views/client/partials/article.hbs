@@ -1,23 +1,10 @@
-<div class='container'>
-    <h1 class='album__header mb-4 text-center'>Tin tức & Kiến thức</h1>
-    <div class='row justify-content-between flex-wrap'>
-        <div class='col-lg-4 col-md-6'>
-            <div class='album__item'>
-                <figure>
-                    <img
-                        class='album__image card-img'
-                        src='http://localhost:8000/assets/images/VINACONEX-7.jpg'
-                        alt='logo'
-                    />
-                </figure>
-                <div class='card-body'>
-                    <p class='fw-bold' style='color: var(--secondary-light);'>Cẩm nang thương hiệu</p>
-                    <h5 class='card-text text-uppercase mb-1 h4' style='color: var(--primary-light);'>6 cách biến nhân
-                        viên thành đại sứ thương hiệu</h5>
-                    <small class='card-text text-uppercase font-weight-light mt-4'>Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit. Repudiandae, recusandae.</small>
-                </div>
-            </div>
-        </div>
+<div class='album__item'>
+    <figure>
+        <img class='album__image card-img' src={{image}} alt='logo' />
+    </figure>
+    <div class='card-body'>
+        <p class='fw-bold' style='color: var(--secondary-light);'>Cẩm nang thương hiệu</p>
+        <h5 class='card-text text-uppercase mb-1 h4' style='color: var(--primary-light);'>{{title}}</h5>
+        <small class='card-text text-uppercase font-weight-light mt-4'>{{subtitle}}</small>
     </div>
 </div>
