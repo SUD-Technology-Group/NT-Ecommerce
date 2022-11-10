@@ -1,3 +1,6 @@
+<!-- Link Swiper's CSS -->
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' />
+
 <section class='section'>
     <div class='container'>
         <h1 class='album__header text-center mb-4'>Dịch vụ tiêu biểu</h1>
@@ -5,13 +8,8 @@
             {{#each serviceList}}
                 <div class='col-lg-4 col-md-6'>
                     <div class='album__item'>
-                        <figure>
-                            <img
-                                class='album__image card-img mt-4 mb-3'
-                                height='300'
-                                src={{this.serviceImage}}
-                                alt='project cover'
-                            />
+                        <figure class='my-4'>
+                            <img class='album__image card-img' src={{this.serviceImage}} alt='project cover' />
                         </figure>
                         <a class='text-uppercase h5'>{{this.serviceName}}</a>
                         <div class=''>
@@ -24,7 +22,7 @@
                                     </li>
                                 {{/each}}
                             </ul>
-                            <a class=''>
+                            <a href='#' class=''>
                                 <span class='seemore'>
                                     Xem tất cả
                                     <span>
@@ -50,6 +48,77 @@
                 </div>
             {{/each}}
         </div>
+    </div>
+</section>
+
+<section class='section'>
+    <div class='container'>
+        <h1 class='text-center customer-reaction__header my-4'>Khách hàng nói sao về NT-Ecommerce</h1>
+        <!-- Swiper -->
+        <div class='swiper mySwiper'>
+            <div class='swiper-wrapper'>
+                <div class='swiper-slide'>
+                    <div class='d-flex flex-column justify-content-between align-items-center'>
+                        <div class='customer-avt'>
+                            <img
+                                src='https://fpt.vn/storage/upload/images/site/fpt.png'
+                                alt='avatar'
+                                class='card-img-top'
+                            />
+                        </div>
+                        <div class='card-body'>
+                            <div class='card-text'>Mr. ABC</div>
+                            <div class='card-title h5'>FPT Media Group</div>
+                            <div class='card-text'>lorem ipsum dolor</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class='d-flex flex-column justify-content-between align-items-center'>
+                        <div class='customer-avt'>
+                            <img
+                                src='https://fpt.vn/storage/upload/images/site/fpt.png'
+                                alt='avatar'
+                                class='card-img-top'
+                            />
+                        </div>
+                        <div class='card-body'>
+                            <div class='card-text'>Mr. ABC</div>
+                            <div class='card-title h5'>FPT Media Group</div>
+                            <div class='card-text'>lorem ipsum dolor</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class='d-flex flex-column justify-content-between align-items-center'>
+                        <div class='customer-avt'>
+                            <img
+                                src='https://fpt.vn/storage/upload/images/site/fpt.png'
+                                alt='avatar'
+                                class='card-img'
+                            />
+                        </div>
+                        <div class='card-body'>
+                            <div class='card-text'>Mr. ABC</div>
+                            <div class='card-title h5'>FPT Media Group</div>
+                            <div class='card-text'>lorem ipsum dolor</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class='swiper-button-next'></div>
+            <div class='swiper-button-prev'></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js'></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", { slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 1, loop: true,
+            loopFillGroupWithBlank: true, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev", },
+            });
+        </script>
     </div>
 </section>
 

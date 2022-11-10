@@ -189,8 +189,9 @@ footer a:hover {
 .list__item {
     border-top: none;
     border-right: none;
-    /* border-left: none; */
+    border-left: none;
     padding-left: 2px;
+    padding-bottom: 2px;
     padding-right: 0px;
     width: 45%;
 }
@@ -216,6 +217,53 @@ footer a:hover {
     transform: translateX(15px);
 }
 
+/* Customer reaction section */
+.customer-reaction__header {
+    color: #002884;
+    margin-top: 10rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: ghostwhite;
+    border-radius: 25px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    right: 5px;
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
+}
+
+.customer-avt {
+    width: 100px;
+    border-radius: 50px;
+}
+
+
 /* Start album session */
 .album__header {
     color: #002884;
@@ -225,7 +273,7 @@ footer a:hover {
 .album__btn {
     border: none;
     border-radius: 0.75rem;
-    background-color: #b3bbc9;
+    background-color: ghostwhite;
     color: #001b4b;
     font-weight: 500;
     white-space: nowrap;
