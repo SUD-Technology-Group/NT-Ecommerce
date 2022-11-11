@@ -1,38 +1,155 @@
-<html lang='en'>
-    <body>
-        <main>
-            <h1 class='album__header text-center'>Dự án tiêu biểu NT-Ecommerce đã thực hiện</h1>
-            <section class='container'>
-                <div class='d-flex my-2 mb-3 justify-content-between'>
-                    {{#each sectionList}}
-                        <span href='#' class='album__btn py-2'>
+<!-- Link Swiper's CSS -->
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' />
+
+<section class='section'>
+    <div class='container'>
+        <h1 class='album__header text-center mb-4'>Dịch vụ tiêu biểu</h1>
+        <div class='row justify-content-between flex-wrap'>
+            {{#each serviceList}}
+                <div class='col-lg-4 col-md-6'>
+                    <div class='album__item'>
+                        <figure class='my-4'>
+                            <img class='album__image card-img' src={{this.serviceImage}} alt='project cover' />
+                        </figure>
+                        <a class='text-uppercase h5'>{{this.serviceName}}</a>
+                        <div class=''>
+                            <ul class='list-group-horizontal list__container d-flex flex-wrap flex-row'>
+                                {{#each feature}}
+                                    <li class='list-group-item mt-1 list__item mr-3'>
+                                        <a class='list__text' href={{this.href}}>
+                                            <span class=''>{{this.name}}</span>
+                                        </a>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                            <a href='#' class=''>
+                                <span class='seemore'>
+                                    Xem tất cả
+                                    <span>
+                                        <svg
+                                            xmlns='http://www.w3.org/2000/svg'
+                                            id='right-arrow'
+                                            width='14.124'
+                                            height='11.991'
+                                            viewBox='0 0 14.124 11.991'
+                                        ><path
+                                                id='right-arrow-2'
+                                                data-name='right-arrow'
+                                                d='M6.744,4.854a.539.539,0,0,0-.8,0,.636.636,0,0,0,0,.851l4.079,4.358L-1.6,9.883a.581.581,0,0,0-.563.6.588.588,0,0,0,.563.61l11.622.18L5.94,15.625a.648.648,0,0,0,0,.859.539.539,0,0,0,.8,0L11.789,11.1a.62.62,0,0,0,0-.851Z'
+                                                transform='translate(2.167 -4.674)'
+                                                fill='#fa8a1a'
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<section class='section'>
+    <div class='container'>
+        <h1 class='text-center customer-reaction__header my-4'>Khách hàng nói sao về NT-Ecommerce</h1>
+        <!-- Swiper -->
+        <div class='swiper mySwiper'>
+            <div class='swiper-wrapper'>
+                <div class='swiper-slide'>
+                    <div class='d-flex flex-column justify-content-between align-items-center'>
+                        <div class='customer-avt'>
+                            <img
+                                src='https://fpt.vn/storage/upload/images/site/fpt.png'
+                                alt='avatar'
+                                class='card-img-top'
+                            />
+                        </div>
+                        <div class='card-body'>
+                            <div class='card-text'>Mr. ABC</div>
+                            <div class='card-title h5'>FPT Media Group</div>
+                            <div class='card-text'>lorem ipsum dolor</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class='d-flex flex-column justify-content-between align-items-center'>
+                        <div class='customer-avt'>
+                            <img
+                                src='https://fpt.vn/storage/upload/images/site/fpt.png'
+                                alt='avatar'
+                                class='card-img-top'
+                            />
+                        </div>
+                        <div class='card-body'>
+                            <div class='card-text'>Mr. ABC</div>
+                            <div class='card-title h5'>FPT Media Group</div>
+                            <div class='card-text'>lorem ipsum dolor</div>
+                        </div>
+                    </div>
+                </div>
+                <div class='swiper-slide'>
+                    <div class='d-flex flex-column justify-content-between align-items-center'>
+                        <div class='customer-avt'>
+                            <img
+                                src='https://fpt.vn/storage/upload/images/site/fpt.png'
+                                alt='avatar'
+                                class='card-img'
+                            />
+                        </div>
+                        <div class='card-body'>
+                            <div class='card-text'>Mr. ABC</div>
+                            <div class='card-title h5'>FPT Media Group</div>
+                            <div class='card-text'>lorem ipsum dolor</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class='swiper-button-next'></div>
+            <div class='swiper-button-prev'></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js'></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", { slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 1, loop: true,
+            loopFillGroupWithBlank: true, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev", },
+            });
+        </script>
+    </div>
+</section>
+
+<section class='section'>
+    <div class='container'>
+        <h1 class='album__header mb-4 text-center'>Dự án tiêu biểu NT-Ecommerce đã thực hiện</h1>
+
+        <div class='row my-2 mb-3 justify-content-between'>
+            {{#each projectList}}
+                <div class='col-lg-2 col-4 text-center mb-2'>
+                    <a href='' class='album__btn d-block p-2'>
+                        <span href='#' class='py-2'>
                             <img class='btn__icon' width={{this.size}} height={{this.size}} src={{this.icon}} />
                             {{this.name}}
                         </span>
-                    {{/each}}
+                    </a>
+
                 </div>
-                <div class='album'>
-                    <div class='d-flex flex-row justify-content-between flex-wrap'>
-                        {{#each albumList}}
-                            <div class='album__item'>
-                                <figure>
-                                    <img class='album__image card-img' src={{this.image}} alt='logo' />
-                                </figure>
-                                <div class='card-body'>
-                                    <h5 class='card-text text-uppercase'>{{this.title}}</h5>
-                                    <p class='card-text text-uppercase'>{{this.subtitle}}</p>
-                                    <div class='d-flex justify-content-between align-items-center'>
-                                    </div>
-                                </div>
-                            </div>
-                        {{/each}}
-                    </div>
+            {{/each}}
+        </div>
+        <div class='row justify-content-between flex-wrap'>
+            {{#each albumList}}
+                <div class='col-lg-4 col-md-6'>
+                    {{> article image=this.image title=this.title subtitle=this.subtitle}}
                 </div>
-            </section>
+            {{/each}}
+        </div>
+    </div>
+    
+    {{!-- form section  --}}
+    {{> form}}
+    {{!-- End of form section  --}}
 
-        </main>
-
-        <script src='../assets/dist/js/bootstrap.bundle.min.js'></script>
-
-    </body>
-</html>
+</section>

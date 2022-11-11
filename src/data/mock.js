@@ -3,27 +3,27 @@ const introduce = [
         title: 'Branding',
         item: [
             {
-                title: 'Tư vấn thương hiệu',
+                title: 'Tư Vấn Thương Hiệu',
                 href: '#',
             },
             {
-                title: 'Thiết kế thương hiệu',
+                title: 'Thiết Kế Thương Hiệu',
                 href: '#',
             },
             {
-                title: 'Nhận dạng thương hiệu số',
+                title: 'Nhận Dạng Thương Hiệu Số',
                 href: '#',
             },
             {
-                title: 'Ấn phẩm marketing',
+                title: 'Ấn Phẩm Marketing',
                 href: '#',
             },
             {
-                title: 'Thiết kế bao bì nhãn mác',
+                title: 'Thiết Kế Bao Bì Nhãn Mác',
                 href: '#',
             },
             {
-                title: 'Bản quyền & Giấy phép',
+                title: 'Bản Quyền & Giấy Phép',
                 href: '#',
             },
         ],
@@ -32,7 +32,7 @@ const introduce = [
         title: 'Marcom',
         item: [
             {
-                title: 'Truyền thông',
+                title: 'Truyền Thông',
                 href: '#',
             },
             {
@@ -48,41 +48,41 @@ const introduce = [
                 href: '#',
             },
             {
-                title: 'Quà tặng thương hiệu',
+                title: 'Quà Tặng Thương Hiệu',
                 href: '#',
             },
         ],
     },
     {
-        title: 'Giải pháp',
+        title: 'Giải Pháp',
         item: [
             {
-                title: 'Trọn gói',
+                title: 'Trọn Gói',
                 href: '#',
             },
             {
-                title: 'Theo ngành',
+                title: 'Theo Ngành',
                 href: '#',
             },
         ],
     },
     {
-        title: 'Về Chúng tôi',
+        title: 'Về Chúng Tôi',
         item: [
             {
-                title: 'Giới thiệu',
+                title: 'Giới Thiệu',
                 href: '#',
             },
             {
-                title: 'Hồ sơ năng lực',
+                title: 'Hồ Sơ Năng Lực',
                 href: '#',
             },
             {
-                title: 'Đội ngũ nhân sự',
+                title: 'Đội Ngũ Nhân Sự',
                 href: '#',
             },
             {
-                title: 'Thông tin tuyển dụng',
+                title: 'Thông Tin Tuyển Dụng',
                 href: '#',
             },
         ],
@@ -90,29 +90,91 @@ const introduce = [
 ];
 
 const albumList = [
-    { image: 'assets/images/VINACONEX-7.jpg', title: 'Vinaconex-7 (BGI Group)', subtitle: 'Nhận diện Website' },
-    { image: 'assets/images/vina-logistics.png', title: 'Vina Logistics', subtitle: 'Nhận diện' },
-    { image: 'assets/images/vietstarland.jpg', title: 'Vietstarland', subtitle: 'Nhận diện' },
-    { image: 'assets/images/videc.jpg', title: 'Videc Group', subtitle: 'Nhận diện, sản phẩm số, website' },
-    { image: 'assets/images/ucbi.jpg', title: 'UCBI', subtitle: 'Nhận diện Website' },
-    { image: 'assets/images/tv-construction.jpg', title: 'TV Construction', subtitle: 'Nhận diện' },
-    { image: 'assets/images/the-youwin-coffee.jpg', title: 'The Youwin Coffeee', subtitle: 'Khác, Nhận diện, Website' },
-    { image: 'assets/images/seurice.jpg', title: 'Seu Rice', subtitle: 'Bao bì, Nhận diện' },
-    { image: 'assets/images/rimac.png', title: 'Rimacx', subtitle: 'Nhận diện' },
-    { image: 'assets/images/qp.jpg', title: 'Quang Phúc Group', subtitle: 'Nhận diện, Website' },
+    { image: '/assets/images/VINACONEX-7.jpg', title: 'Vinaconex-7 (BGI Group)', subtitle: 'Nhận diện Website' },
+    { image: '/assets/images/vina-logistics.png', title: 'Vina Logistics', subtitle: 'Nhận diện' },
+    { image: '/assets/images/vietstarland.jpg', title: 'Vietstarland', subtitle: 'Nhận diện' },
+    { image: '/assets/images/videc.jpg', title: 'Videc Group', subtitle: 'Nhận diện, sản phẩm số, website' },
+    { image: '/assets/images/ucbi.jpg', title: 'UCBI', subtitle: 'Nhận diện Website' },
+    { image: '/assets/images/tv-construction.jpg', title: 'TV Construction', subtitle: 'Nhận diện' },
+    {
+        image: '/assets/images/the-youwin-coffee.jpg',
+        title: 'The Youwin Coffeee',
+        subtitle: 'Khác, Nhận diện, Website',
+    },
+    { image: '/assets/images/seurice.jpg', title: 'Seu Rice', subtitle: 'Bao bì, Nhận diện' },
+    { image: '/assets/images/rimac.png', title: 'Rimacx', subtitle: 'Nhận diện' },
+    { image: '/assets/images/qp.jpg', title: 'Quang Phúc Group', subtitle: 'Nhận diện, Website' },
 ];
 
-const sectionList = [
-    { icon: 'assets/images/icon_cat3.png', size: '28', name: 'Nhận diện' },
-    { icon: 'assets/images/icon_cat5.png', size: '23', name: 'Sản phẩm số' },
-    { icon: 'assets/images/icon_cat2.png', size: '28', name: 'Bao bì' },
-    { icon: 'assets/images/icon_cat6.png', size: '23', name: 'In ấn' },
-    { icon: 'assets/images/icon_cat5.png', size: '28', name: 'Website' },
-    { icon: 'assets/images/icon_cat1.png', size: '23', name: 'Khác' },
+const projectList = [
+    { icon: '/assets/images/icon_cat3.png', size: '23', name: 'Nhận diện' },
+    { icon: '/assets/images/icon_cat5.png', size: '23', name: 'Sản phẩm số' },
+    { icon: '/assets/images/icon_cat2.png', size: '23', name: 'Bao bì' },
+    { icon: '/assets/images/icon_cat6.png', size: '23', name: 'In ấn' },
+    { icon: '/assets/images/icon_cat5.png', size: '23', name: 'Website' },
+    { icon: '/assets/images/icon_cat1.png', size: '23', name: 'Khác' },
+];
+
+const serviceList = [
+    {
+        serviceImage: '/assets/images/dich-vu-tu-van-thuong-hieu-sao-kim-branding.jpg',
+        serviceName: 'Tư vấn thương hiệu',
+        feature: [
+            { name: 'Chiến lược thương hiệu', href: '' },
+            { name: 'Tái định vị thương hiệu', href: '' },
+            { name: 'Ra mắt thương hiệu', href: '' },
+            { name: 'Quy chế thương hiệu', href: '' },
+            { name: 'Mở rộng thương hiệu', href: '' },
+            { name: 'Định giá thương hiệu', href: '' },
+            { name: 'Brand Advisor', href: '' },
+            { name: 'Branding Pack', href: '' },
+        ],
+    },
+    {
+        serviceImage: '/assets/images/dich-vu-sang-tao-thuong-hieu-sao-kim-branding.jpg',
+        serviceName: 'Thiết kế thương hiệu',
+        feature: [
+            { name: 'Thiết kế Logo', href: '' },
+            { name: 'Nhận diện thương hiệu', href: '' },
+            { name: 'Đặt tên thương hiệu', href: '' },
+            { name: 'Nhận diện văn phòng', href: '' },
+            { name: 'Sáng tác Slogan', href: '' },
+            { name: 'Nhận diện điểm bán', href: '' },
+            { name: 'Thiết kế Mascot', href: '' },
+            { name: 'Rebranding', href: '' },
+        ],
+    },
+    {
+        serviceImage: '/assets/images/dich-vu-thiet-ke-sang-tao-thuong-hieu-so-sao-kim-branding.jpg',
+        serviceName: 'Thương hiệu số',
+        feature: [
+            { name: 'Thiết kế Website', href: '' },
+            { name: 'UI/UX Design', href: '' },
+            { name: 'Nhận diện số', href: '' },
+            { name: 'Online Sate Kit', href: '' },
+            { name: 'Landing page', href: '' },
+            { name: 'Giải pháp VR360', href: '' },
+            { name: 'Brand Guidelines', href: '' },
+        ],
+    },
+    {
+        serviceImage: '/assets/images/dich-vu-thiet-ke-bao-bi-nhan-mac-sao-kim-branding.jpg',
+        serviceName: 'Bao bì nhãn mác',
+        feature: [
+            { name: 'Bao bì sản phẩm', href: '' },
+            { name: 'Nhãn mác sản phẩm', href: '' },
+            { name: 'Kiểu dáng công nghiệp', href: '' },
+            { name: 'Nhãn mác thực phẩm', href: '' },
+            { name: 'Nhãn mác mỹ phẩm', href: '' },
+            { name: 'Nhãn mác dược phẩm', href: '' },
+            { name: 'Nhãn mác đồ uống', href: '' },
+        ],
+    },
 ];
 
 module.exports = {
     introduce,
     albumList,
-    sectionList,
+    projectList,
+    serviceList,
 };
