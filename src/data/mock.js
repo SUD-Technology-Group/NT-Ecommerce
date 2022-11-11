@@ -172,9 +172,16 @@ const serviceList = [
     },
 ];
 
+const customerReactionList = [
+    { author: '', logo: '', title: '' },
+    { author: '', logo: '', title: '' },
+    { author: '', logo: '', title: '' },
+];
+
 module.exports = {
     introduce,
     albumList,
     projectList,
     serviceList,
+    customerReactionList,
 };
