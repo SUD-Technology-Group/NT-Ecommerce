@@ -20,4 +20,7 @@ router.get('/dich-vu', function (req, res, next) {
     res.render(baseURL + 'service/index', { title: 'NT E-commerce' });
 });
 
+router.get('*', function (req, res, next) {
+    res.render(baseURL + '404', { title: 'NT E-commerce', layout: '' });
+});
 module.exports = router;
