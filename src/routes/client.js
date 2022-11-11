@@ -1,4 +1,4 @@
-const { introduce, albumList, projectList, serviceList } = require('../data/mock');
+const { introduce, albumList, projectList, serviceList, customerReactionList } = require('../data/mock');
 const express = require('express');
 const router = express.Router();
 
@@ -12,6 +12,7 @@ router.get('/', function (req, res, next) {
         albumList: albumList,
         projectList: projectList,
         serviceList: serviceList,
+        customerReactionList: customerReactionList,
     });
 });
 
