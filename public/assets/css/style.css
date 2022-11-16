@@ -83,20 +83,16 @@ footer a:hover {
     text-align: left !important;
 }
 
-.list-group-item {
-    padding: 12px 0px 12px 0px;
-}
-
 .list__item {
-    border-bottom: 1px solid #2d2d2d;
-    margin-right: 10px;
-
-    width: 45%;
+    border-bottom: 1px solid #ccd1db;
+    width: 48%;
+    padding: 12px 0;
 }
+
 
 .list__text {
     color: var(--secondary-text);
-    font-size: 0.85rem;
+    font-size: 0.78rem;
 }
 
 .list__item:hover .list__text {
@@ -269,3 +265,7 @@ figure:hover .album__image {
 }
 
 /* End project page */
+
+.new-section {
+    margin-top: 9rem !important;
+}

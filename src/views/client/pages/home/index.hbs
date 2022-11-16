@@ -3,51 +3,44 @@
         <h1 class='heading-section text-center mb-4'>Dịch vụ tiêu biểu</h1>
         <div class='row justify-content-between flex-wrap'>
             {{#each serviceList}}
-                <div class='col-lg-4 col-md-6'>
-                    <div class='album__item'>
-                        <figure class='my-4'>
-                            <img class='album__image card-img' src={{this.serviceImage}} alt='project cover' />
-                        </figure>
+            <div class='col-lg-4 col-md-6'>
+                <div class='album__item'>
+                    <figure class='my-4'>
+                        <img class='album__image card-img' src={{this.serviceImage}} alt='project cover' />
+                    </figure>
 
-                        <h3>
-                            <a class='text-uppercase h5 fw-bold'>{{this.serviceName}}</a>
-                        </h3>
-                        <div class=''>
-                            <ul class='list-group-horizontal list__container d-flex flex-wrap flex-row p-0'>
-                                {{#each feature}}
-                                    <li class='list-group-item list__item'>
-                                        <a class='list__text' href={{this.href}}>
-                                            <span class=''>{{this.name}}</span>
-                                        </a>
-                                    </li>
-                                {{/each}}
-                            </ul>
-                            <div>
-                                 <a href='#' class=''>
-                                    <span class='seemore'>
-                                        Xem tất cả
-                                        <span>
-                                            <svg
-                                                xmlns='http://www.w3.org/2000/svg'
-                                                id='right-arrow'
-                                                width='14.124'
-                                                height='11.991'
-                                                viewBox='0 0 14.124 11.991'
-                                            ><path
-                                                    id='right-arrow-2'
-                                                    data-name='right-arrow'
-                                                    d='M6.744,4.854a.539.539,0,0,0-.8,0,.636.636,0,0,0,0,.851l4.079,4.358L-1.6,9.883a.581.581,0,0,0-.563.6.588.588,0,0,0,.563.61l11.622.18L5.94,15.625a.648.648,0,0,0,0,.859.539.539,0,0,0,.8,0L11.789,11.1a.62.62,0,0,0,0-.851Z'
-                                                    transform='translate(2.167 -4.674)'
-                                                    fill='#fa8a1a'
-                                                ></path>
-                                            </svg>
-                                        </span>
-                                    </span>
+                    <h3>
+                        <a class='h4 fw-medium'>{{this.serviceName}}</a>
+                    </h3>
+                    <div class=''>
+                        <ul
+                            class='list-group-horizontal list__container d-flex flex-wrap flex-row justify-content-between p-0'>
+                            {{#each feature}}
+                            <li class='list-group-item list__item'>
+                                <a class='list__text fw-medium' href={{this.href}}>
+                                    <span class=''>{{this.name}}</span>
                                 </a>
-                            </div>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        <div>
+                            <a href='#' class=''>
+                                <span class='seemore'>
+                                    Xem tất cả
+                                    <span>
+                                        <svg xmlns='http://www.w3.org/2000/svg' id='right-arrow' width='14.124'
+                                            height='11.991' viewBox='0 0 14.124 11.991'>
+                                            <path id='right-arrow-2' data-name='right-arrow'
+                                                d='M6.744,4.854a.539.539,0,0,0-.8,0,.636.636,0,0,0,0,.851l4.079,4.358L-1.6,9.883a.581.581,0,0,0-.563.6.588.588,0,0,0,.563.61l11.622.18L5.94,15.625a.648.648,0,0,0,0,.859.539.539,0,0,0,.8,0L11.789,11.1a.62.62,0,0,0,0-.851Z'
+                                                transform='translate(2.167 -4.674)' fill='#fa8a1a'></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
             {{/each}}
         </div>
     </div>
@@ -60,28 +53,31 @@
         <div class='swiper mySwiper'>
             <div class='swiper-wrapper'>
                 {{#each customerReactionList}}
-                    <div class='swiper-slide'>
-                        <div class='d-flex flex-column justify-content-between align-items-center'>
-                            <div class='customer-avt'>
-                                <img src={{this.logo}} alt='avatar' class='card-img-top' />
-                            </div>
-                            <div class='card-body'>
-                                <div class='card-text'>{{this.author}}</div>
-                                <div class='card-title h5'>{{this.title}}</div>
-                                <div class='card-text'>lorem ipsum dolor</div>
-                            </div>
+                <div class='swiper-slide'>
+                    <div class='d-flex flex-column justify-content-between align-items-center'>
+                        <div class='customer-avt'>
+                            <img src={{this.logo}} alt='avatar' class='card-img-top' />
+                        </div>
+                        <div class='card-body'>
+                            <div class='card-text'>{{this.author}}</div>
+                            <div class='card-title h5'>{{this.title}}</div>
+                            <div class='card-text'>lorem ipsum dolor</div>
                         </div>
                     </div>
+                </div>
                 {{/each}}
             </div>
             <div class='swiper-button-next'></div>
             <div class='swiper-button-prev'></div>
         </div>
-       
+        <!-- Swiper JS -->
+        <script src='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js'></script>
+
         <!-- Initialize Swiper -->
         <script>
-            var swiper = new Swiper(".mySwiper", { slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 1, loop: true,
-            loopFillGroupWithBlank: true, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev", },
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3, spaceBetween: 30, slidesPerGroup: 1, loop: true,
+                loopFillGroupWithBlank: true, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev", },
             });
         </script>
     </div>
@@ -93,24 +89,92 @@
 
         <div class='row my-2 mb-3 justify-content-between'>
             {{#each projectTypeList}}
-                {{> project-type}}
+            {{> project-type}}
             {{/each}}
         </div>
 
         <div class='row justify-content-between flex-wrap'>
             {{#each albumList}}
-                <div class='col-lg-4 col-md-6'>
-                    {{> significant-project image=this.image title=this.title subtitle=this.subtitle}}
-                </div>
+            <div class='col-lg-4 col-md-6'>
+                {{> significant-project image=this.image title=this.title subtitle=this.subtitle}}
+            </div>
             {{/each}}
         </div>
     </div>
 </section>
 
+<section class='section newpapers-info-section'>
+    <div class='container'>
+        <h2 class='heading-section text-center mb-5'>Thông tin báo chí</h2>
+        <div class="d-flex flex-row justify-content-between my-5">
+									<div ><a href=""><img src="https://www.saokim.com.vn/storage/2022/08/vnexpress-logo-2.png" alt="VnExpress Logo" title="Ảnh bài viết Trang chủ" ></a></div>
+									<div ><a href=""><img src="https://www.saokim.com.vn/storage/2022/08/cafef-logo-2.png" alt="CafeF Logo" title="Ảnh bài viết Trang chủ" ></a></div>
+									<div ><a href=""><img src="https://www.saokim.com.vn/storage/2022/08/vtv-news-logo-1.png" alt="VTV News Logo" title="Ảnh bài viết Trang chủ" -src></a></div>
+									<div ><a href=""><img src="https://www.saokim.com.vn/storage/2022/08/vneconomy-logo-1.png" alt="VnEconomy Logo" title="Ảnh bài viết Trang chủ" ></a></div>
+									<div ><a href=""><img src="https://www.saokim.com.vn/storage/2022/08/vietnamnet-logo.png" alt="Vietnamnet Logo" title="Ảnh bài viết Trang chủ"></a></div>
+									<div ><a href=""><img src="https://www.saokim.com.vn/storage/2022/08/cafebiz-logo.png" alt="Cafebiz Logo" title="Ảnh bài viết Trang chủ"></a></div>	
+        </div>
+    </div>
 
 
-<section class='section'>
-    {{! form section  }}
-    {{> contact}}
-    {{! End of form section  }}
 </section>
+
+
+<section class='container'>
+    {{! form section }}
+    {{> contact}}
+    {{! End of form section }}
+</section>
+
+<section class='section ecosystem-section'>
+    <div class='container'>
+        <h2 class='heading-section text-left mb-4'>Hệ sinh thái của NT-Ecommerce</h2>
+        <div class="d-flex flex-row justify-content-between my-5">
+
+            <figure class="gallery-item">
+                <div class="gallery-icon landscape">
+                    <img width="108" height="40" src="https://www.saokim.com.vn/storage/2022/01/saokim-logo.svg"
+                        class="attachment-full size-full" alt="Sao Kim Branding"
+                        title="Ảnh bài viết Trang chủ"></noscript>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <div class="gallery-icon landscape">
+                    <img width="108" height="40" src="https://www.saokim.com.vn/storage/2022/01/saokim-digital-logo.svg"
+                        class="attachment-full size-full" alt="Sao Kim Digital"
+                        title="Ảnh bài viết Trang chủ"></noscript>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <div class="gallery-icon landscape">
+                    <img width="108" height="40"
+                        src="https://www.saokim.com.vn/storage/2022/01/saokim-pakaging-logo.svg"
+                        class="attachment-full size-full" alt="Sao Kim Packaging"
+                        title="Ảnh bài viết Trang chủ"></noscript>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <div class="gallery-icon landscape">
+                    <img width="84" height="25" src="https://www.saokim.com.vn/storage/2022/01/logoart-logo.svg"
+                        class="attachment-full size-full" alt="Logoart" title="Ảnh bài viết Trang chủ"></noscript>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <div class="gallery-icon landscape">
+                    <img width="120" height="17" src="https://www.saokim.com.vn/storage/2022/01/brandcare-logo.svg"
+                        class="attachment-full size-full" alt="Brandcare" title="Ảnh bài viết Trang chủ"></noscript>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <div class="gallery-icon landscape">
+                    <img width="115" height="45" src="https://www.saokim.com.vn/storage/2022/01/elita.svg"
+                        class="attachment-full size-full" alt="Elita" title="Ảnh bài viết Trang chủ"></noscript>
+                </div>
+        </div>
+    </div>
+
+
+</section>
+    <div class="container new-section">
+        {{> info-register }}
+    </div>
