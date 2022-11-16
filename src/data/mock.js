@@ -67,6 +67,23 @@ const introduce = [
         ],
     },
     {
+        title: 'Dự án',
+        item: [
+            {
+                title: 'Dự án tiêu biểu',
+                href: 'du-an',
+            },
+            {
+                title: 'Thư viện dự án',
+                href: 'project',
+            },
+            {
+                title: 'Danh sách khách hàng',
+                href: 'khach-hang',
+            },
+        ],
+    },
+    {
         title: 'Về Chúng Tôi',
         item: [
             {
@@ -172,9 +189,28 @@ const serviceList = [
     },
 ];
 
+const customerReactionList = [
+    {
+        author: 'Mr. Nguyen Trieu Duong',
+        logo: 'https://fpt.vn/storage/upload/images/site/fpt.png',
+        title: 'FPT Media Group',
+    },
+    {
+        author: 'Mr. Trinh Cam Minh',
+        logo: 'https://play-lh.googleusercontent.com/AdmZSfDUY85j4653n327W0qc0IsWJH2NyxkfWOYvlPfiIp4VcjI43k71gO2EIW2aI98',
+        title: 'VNG Media Group',
+    },
+    {
+        author: 'Mr. Nguyen Thanh Vinh',
+        logo: 'https://s3-symbol-logo.tradingview.com/vingroup-joint-stock-company--600.png',
+        title: 'Vingroup Media Team',
+    },
+];
+
 module.exports = {
     introduce,
     albumList,
     projectList,
     serviceList,
+    customerReactionList,
 };

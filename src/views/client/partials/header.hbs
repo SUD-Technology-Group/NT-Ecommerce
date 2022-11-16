@@ -1,5 +1,5 @@
 <nav class='navbar navbar-expand-sm navbar-light fixed-top'>
-    <a class='navbar-brand ms-4' href='#'>
+    <a class='navbar-brand ms-4' href='/'>
         Logo
     </a>
     <button
@@ -20,7 +20,7 @@
                     <a class='nav-link dropdown-toggle' href='#' id='navbardrop' data-toggle='dropdown'>
                         {{this.title}}
                     </a>
-                    <div class='dropdown-menu sm-menu'>
+                    <div class='dropdown-menu sm-menu p-0 overflow-hidden'>
                         {{#each item}}
                             <a class='dropdown-item' href='{{this.href}}'>{{this.title}}</a>
                         {{/each}}

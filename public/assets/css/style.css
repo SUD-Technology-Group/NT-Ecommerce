@@ -1,12 +1,15 @@
 :root {
-    --primary-light: #757ce8;
+    --primary-light: #002884;
     --primary-dark: #002884;
     --primary-main: #002884;
     --primary-contrastText: #fff;
+
     --secondary-light: #ff7961;
     --secondary-main: #f44336;
     --secondary-dark: #ba000d;
     --secondary-contrastText: #000;
+
+    --secondary-text: #2d2d2d;
 }
 
 ::selection {
@@ -77,19 +80,19 @@ footer a:hover {
 .list__container {
     text-align: left !important;
 }
+.list-group-item {
+    padding: 12px 0px 12px 0px;
+}
 
 .list__item {
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    padding-left: 2px;
-    padding-bottom: 2px;
-    padding-right: 0px;
+    border-bottom: 1px solid #2d2d2d;
+    margin-right: 10px;
+
     width: 45%;
 }
 
 .list__text {
-    color: #b3bbc9;
+    color: var(--secondary-text);
     font-size: 0.85rem;
 }
 
@@ -155,11 +158,11 @@ footer a:hover {
     border-radius: 50px;
 }
 
-
 /* Start album session */
-.album__header {
+.heading-section {
     color: #002884;
     margin-top: 10rem;
+    font-weight: bolder;
 }
 
 .album__btn {
@@ -213,3 +216,15 @@ figure:hover .album__image {
 .album__image {
     background-size: cover;
 }
+
+/* Start project page */
+.project-section {
+    margin-top: 190px;
+}
+.image-box-img img {
+    width: 100%;
+    height: 574px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+/* End project page */
