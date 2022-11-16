@@ -62,55 +62,20 @@
         <!-- Swiper -->
         <div class='swiper mySwiper'>
             <div class='swiper-wrapper'>
-                <div class='swiper-slide'>
-                    <div class='d-flex flex-column justify-content-between align-items-center'>
-                        <div class='customer-avt'>
-                            <img
-                                src='https://fpt.vn/storage/upload/images/site/fpt.png'
-                                alt='avatar'
-                                class='card-img-top'
-                            />
-                        </div>
-                        <div class='card-body'>
-                            <div class='card-text'>Mr. ABC</div>
-                            <div class='card-title h5'>FPT Media Group</div>
-                            <div class='card-text'>lorem ipsum dolor</div>
+                {{#each customerReactionList}}
+                    <div class='swiper-slide'>
+                        <div class='d-flex flex-column justify-content-between align-items-center'>
+                            <div class='customer-avt'>
+                                <img src={{this.logo}} alt='avatar' class='card-img-top' />
+                            </div>
+                            <div class='card-body'>
+                                <div class='card-text'>{{this.author}}</div>
+                                <div class='card-title h5'>{{this.title}}</div>
+                                <div class='card-text'>lorem ipsum dolor</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class='swiper-slide'>
-                    <div class='d-flex flex-column justify-content-between align-items-center'>
-                        <div class='customer-avt'>
-                            <img
-                                src='https://fpt.vn/storage/upload/images/site/fpt.png'
-                                alt='avatar'
-                                class='card-img-top'
-                            />
-                        </div>
-                        <div class='card-body'>
-                            <div class='card-text'>Mr. ABC</div>
-                            <div class='card-title h5'>FPT Media Group</div>
-                            <div class='card-text'>lorem ipsum dolor</div>
-                        </div>
-                    </div>
-                </div>
-                <div class='swiper-slide'>
-                    <div class='d-flex flex-column justify-content-between align-items-center'>
-                        <div class='customer-avt'>
-                            <img
-                                src='https://fpt.vn/storage/upload/images/site/fpt.png'
-                                alt='avatar'
-                                class='card-img'
-                            />
-                        </div>
-                        <div class='card-body'>
-                            <div class='card-text'>Mr. ABC</div>
-                            <div class='card-title h5'>FPT Media Group</div>
-                            <div class='card-text'>lorem ipsum dolor</div>
-                        </div>
-                    </div>
-                </div>
-
+                {{/each}}
             </div>
             <div class='swiper-button-next'></div>
             <div class='swiper-button-prev'></div>
