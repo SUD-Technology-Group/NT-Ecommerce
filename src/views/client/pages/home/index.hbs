@@ -92,15 +92,15 @@
         <h1 class='heading-section mb-4 text-center'>Dự án tiêu biểu NT-Ecommerce đã thực hiện</h1>
 
         <div class='row my-2 mb-3 justify-content-between'>
-            {{#each projectList}}
-                {{> project}}
+            {{#each projectTypeList}}
+                {{> project-type}}
             {{/each}}
         </div>
 
         <div class='row justify-content-between flex-wrap'>
             {{#each albumList}}
                 <div class='col-lg-4 col-md-6'>
-                    {{> article image=this.image title=this.title subtitle=this.subtitle}}
+                    {{> significant-project image=this.image title=this.title subtitle=this.subtitle}}
                 </div>
             {{/each}}
         </div>

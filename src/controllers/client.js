@@ -1,4 +1,4 @@
-const { introduce, albumList, projectList, serviceList } = require('../data/mock');
+const { introduce, albumList, projectTypeList, serviceList } = require('../data/mock');
 
 const baseURL = 'client/pages/';
 
@@ -9,7 +9,7 @@ const clientController = {
             title: 'NT E-commerce',
             list: introduce,
             albumList: albumList,
-            projectList: projectList,
+            projectTypeList: projectTypeList,
             serviceList: serviceList,
         });
     },
@@ -19,7 +19,8 @@ const clientController = {
             layout: 'main',
             title: 'Dự án tiêu biểu | NTEcommerce',
             list: introduce,
-            projectList: projectList,
+            projectTypeList: projectTypeList,
+            albumList: albumList,
         });
     },
 };

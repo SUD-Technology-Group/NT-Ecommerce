@@ -1,5 +1,5 @@
 :root {
-    --primary-light: #002884;
+    --primary-light: #dbe2f2;
     --primary-dark: #002884;
     --primary-main: #002884;
     --primary-contrastText: #fff;
@@ -18,7 +18,7 @@
 }
 
 ::placeholder {
-    color: var(--primary-contrastText) !important;
+    color: var(--primary-dark) !important;
 }
 
 * {
@@ -64,9 +64,10 @@ ul li a {
 }
 
 .dropdown-item:hover {
-    background-color: var(--primary-light);
+    background-color: var(--primary-dark);
     color: var(--primary-contrastText);
 }
+
 /* End of Header Section  */
 
 /* Footer Section  */
@@ -74,12 +75,14 @@ footer a:hover {
     opacity: 0.5;
     transition: all 0.5s;
 }
+
 /* End of Footer Section  */
 
 /* Start Service Section */
 .list__container {
     text-align: left !important;
 }
+
 .list-group-item {
     padding: 12px 0px 12px 0px;
 }
@@ -161,8 +164,8 @@ footer a:hover {
 /* Start album session */
 .heading-section {
     color: #002884;
-    margin-top: 10rem;
-    font-weight: bolder;
+    margin-top: 8rem;
+    font-weight: bold;
 }
 
 .album__btn {
@@ -217,14 +220,52 @@ figure:hover .album__image {
     background-size: cover;
 }
 
+/* Form */
+.form__title {
+    width: 120%;
+}
+
+.form__input {
+    border: none;
+    border-radius: 0.65rem !important;
+    background-color: ghostwhite;
+    color: #001b4b;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 1.5;
+    font-size: 1rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+.form__btn {
+
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    background-color: #FA8A1A;
+    border-radius: 12px;
+    outline: none;
+    background-image: url('https://www.saokim.com.vn/storage/2021/11/bg-submit.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: auto 100%;
+}
+
 /* Start project page */
 .project-section {
-    margin-top: 190px;
+    margin-top: 100px;
 }
+
 .image-box-img img {
     width: 100%;
     height: 574px;
     object-fit: cover;
     vertical-align: middle;
 }
+
 /* End project page */
