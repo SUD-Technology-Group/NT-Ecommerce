@@ -1,25 +1,37 @@
-<header class='d-flex justify-content-around align-items-center'>
-    <a href='#'>
-        <img src='https://www.saokim.com.vn/storage/2022/01/saokim-logo.svg' alt='logo' />
+<nav class='navbar navbar-expand-sm navbar-light fixed-top'>
+    <a class='navbar-brand ms-4' href='/'>
+        Logo
     </a>
-    <div class='header_ul_container'>
+    <button
+        class='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarTogglerDemo03'
+        aria-controls='navbarTogglerDemo03'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+    >
+        <span class='navbar-toggler-icon'></span>
+    </button>
+    <div class='collapse navbar-collapse justify-content-center' id='navbarTogglerDemo03'>
         {{#each list}}
-            <ul class='header__ul'>
-                <span class='header__span d-flex align-items-center'>
-                    <h4 class='mr-3' style='margin-bottom: 0 !important;'>{{this.title}}</h4>
-                    <i class='fa-solid fa-chevron-down'></i>
-                </span>
-                <ul class='header_ul_subNav mt-3'>
-                    {{#each item}}
-                        <li class='header__li'>
-                            <a href={{this.href}}>{{this.title}}</a>
-                        </li>
-                    {{/each}}
-                </ul>
+            <ul class='navbar-nav mr-4 mt-2 mt-lg-0'>
+                <li class='nav-item dropdown dmenu'>
+                    <a class='nav-link dropdown-toggle' href='#' id='navbardrop' data-toggle='dropdown'>
+                        {{this.title}}
+                    </a>
+                    <div class='dropdown-menu sm-menu p-0 overflow-hidden'>
+                        {{#each item}}
+                            <a class='dropdown-item' href='{{this.href}}'>{{this.title}}</a>
+                        {{/each}}
+                    </div>
+                </li>
             </ul>
         {{/each}}
     </div>
-    <div>
-        <button class='header__button' role='button'>Liên hệ</button>
+    <div class='social-part'>
+        <i class='fa fa-facebook' aria-hidden='true'></i>
+        <i class='fa fa-twitter' aria-hidden='true'></i>
+        <i class='fa fa-instagram' aria-hidden='true'></i>
     </div>
-</header>
+</nav>
