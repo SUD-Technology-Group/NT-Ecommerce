@@ -67,6 +67,23 @@ const introduce = [
         ],
     },
     {
+        title: 'Dự án',
+        item: [
+            {
+                title: 'Dự án tiêu biểu',
+                href: 'du-an',
+            },
+            {
+                title: 'Thư viện dự án',
+                href: 'project',
+            },
+            {
+                title: 'Danh sách khách hàng',
+                href: 'khach-hang',
+            },
+        ],
+    },
+    {
         title: 'Về Chúng Tôi',
         item: [
             {
