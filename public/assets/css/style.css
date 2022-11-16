@@ -87,9 +87,7 @@ footer a:hover {
 .list__item {
     border-bottom: 1px solid #2d2d2d;
     margin-right: 10px;
-    padding-left: 2px;
-    padding-bottom: 2px;
-    padding-right: 0px;
+
     width: 45%;
 }
 
