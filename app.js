@@ -19,10 +19,7 @@ app.engine(
         extname: 'hbs',
         defaultView: 'client/pages',
         layoutsDir: path.join(__dirname, 'src/views/layouts/'),
-        partialsDir: [
-            path.join(__dirname, 'src/views/client/partials/'),
-            // path.join(__dirname, 'src/views/admin/partials/'),
-        ],
+        partialsDir: [path.join(__dirname, 'src/views/partials/')],
     }),
 );
 

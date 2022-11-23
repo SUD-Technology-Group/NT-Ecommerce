@@ -5,9 +5,11 @@
             {{#each serviceList}}
             <div class='col-lg-4 col-md-6'>
                 <div class='album__item'>
-                    <figure class='my-4'>
-                        <img class='album__image card-img' src={{this.serviceImage}} alt='project cover' />
-                    </figure>
+                    <a href="{{this.href}}">
+                        <figure class='my-4'>
+                            <img class='album__image card-img' src={{this.serviceImage}} alt='project cover' />
+                        </figure>
+                    </a>
 
                     <h3>
                         <a class='h4 fw-medium'>{{this.serviceName}}</a>
