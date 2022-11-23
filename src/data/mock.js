@@ -123,7 +123,7 @@ const albumList = [
     { image: '/assets/images/qp.jpg', title: 'Quang Phúc Group', subtitle: 'Nhận diện, Website' },
 ];
 
-const projectList = [
+const projectTypeList = [
     { icon: '/assets/images/icon_cat3.png', size: '23', name: 'Nhận diện' },
     { icon: '/assets/images/icon_cat5.png', size: '23', name: 'Sản phẩm số' },
     { icon: '/assets/images/icon_cat2.png', size: '23', name: 'Bao bì' },
@@ -210,7 +210,7 @@ const customerReactionList = [
 module.exports = {
     introduce,
     albumList,
-    projectList,
+    projectTypeList,
     serviceList,
     customerReactionList,
 };
