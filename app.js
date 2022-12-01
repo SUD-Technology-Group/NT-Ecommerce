@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 db.connect();
 
-app.get('/thongAPI/data', (req, res, next) => {
+app.get('/thongAPI', (req, res, next) => {
     return res.json([
         {
         idBaiHat: '1',
