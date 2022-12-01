@@ -62,7 +62,7 @@ router.get('/baihatyeuthich.php', (req, res, next) => {
               "Tenbaihat": "Thấy Là Yêu Thương",
               "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/Album/thaylayeuthuong.jpg",
               "Casi": "OnlyC, Lou Hoàng",
-              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Thay%20La%20Yeu%20Thuong%20-%20OnlyC.mp3",
+              "Linkbaihat": "https://zingmp3.vn/album/Sau-Lung-Anh-Co-Ai-Kia-Winter-Version-Single-Thieu-Bao-Tram/6B7WWCWB.html",
               "Luotthich": "1"
             },
             {
