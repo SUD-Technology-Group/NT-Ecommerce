@@ -1,7 +1,49 @@
 
 const express = require('express');
-
 const router = express.Router();
+
+let songs = [
+    {
+      "Idbaihat": "1",
+      "Tenbaihat": "Phố đã lên đèn",
+      "Hinhbaihat": "https://nguoinoitieng.tv/images/nnt/102/0/bglq.jpg",
+      "Casi": "Huyền Tâm Môn",
+      "Linkbaihat": "https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Pho%20Da%20Len%20Den%20-%20Huyen%20Tam%20Mon%20-%20Huyen%20T.mp3?alt=media&token=f80a6884-1d6a-4ca2-86ee-2029e54afc1a",
+      "Luotthich": "1"
+    },
+    {
+      "Idbaihat": "3",
+      "Tenbaihat": "Memories",
+      "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/memories.jpg",
+      "Casi": "Maroon 5",
+      "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Memories-Maroon5-6091839.mp3",
+      "Luotthich": "1"
+    },
+    {
+      "Idbaihat": "4",
+      "Tenbaihat": "I Know U Know",
+      "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/iknowuknow500.jpg",
+      "Casi": "Soobin Hoàng Sơn",
+      "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/IKnowYouKnow-SoobinHoangSon-5430867.mp3",
+      "Luotthich": "1"
+    },
+    {
+      "Idbaihat": "5",
+      "Tenbaihat": "Có Em",
+      "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/Coem.jpg",
+      "Casi": "Madihu ft LowG",
+      "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Co-Em-Madihu-ft-Low-G.mp3",
+      "Luotthich": "1"
+    },
+    {
+      "Idbaihat": "6",
+      "Tenbaihat": "Có Không Giữ Mất Đừng Tìm ",
+      "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/162668.jpg",
+      "Casi": "Trúc Nhân ",
+      "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Co%20Khong%20Giu%20Mat%20Dung%20Tim%20-%20Truc%20Nhan.mp3",
+      "Luotthich": "1"
+    }
+  ]
 
 router.get('/songbanner.php', (req, res, next) => {
     
@@ -56,48 +98,7 @@ router.get('/albumhot', (req, res, next) => {
 
 router.get('/baihatyeuthich.php', (req, res, next) => {
     return res.json(
-        [
-            {
-              "Idbaihat": "1",
-              "Tenbaihat": "Phố đã lên đèn",
-              "Hinhbaihat": "https://nguoinoitieng.tv/images/nnt/102/0/bglq.jpg",
-              "Casi": "Huyền Tâm Môn",
-              "Linkbaihat": "https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Pho%20Da%20Len%20Den%20-%20Huyen%20Tam%20Mon%20-%20Huyen%20T.mp3?alt=media&token=f80a6884-1d6a-4ca2-86ee-2029e54afc1a",
-              "Luotthich": "1"
-            },
-            {
-              "Idbaihat": "3",
-              "Tenbaihat": "Memories",
-              "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/memories.jpg",
-              "Casi": "Maroon 5",
-              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Memories-Maroon5-6091839.mp3",
-              "Luotthich": "1"
-            },
-            {
-              "Idbaihat": "4",
-              "Tenbaihat": "I Know U Know",
-              "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/iknowuknow500.jpg",
-              "Casi": "Soobin Hoàng Sơn",
-              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/IKnowYouKnow-SoobinHoangSon-5430867.mp3",
-              "Luotthich": "1"
-            },
-            {
-              "Idbaihat": "5",
-              "Tenbaihat": "Có Em",
-              "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/Coem.jpg",
-              "Casi": "Madihu ft LowG",
-              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Co-Em-Madihu-ft-Low-G.mp3",
-              "Luotthich": "1"
-            },
-            {
-              "Idbaihat": "6",
-              "Tenbaihat": "Có Không Giữ Mất Đừng Tìm ",
-              "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/162668.jpg",
-              "Casi": "Trúc Nhân ",
-              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Co%20Khong%20Giu%20Mat%20Dung%20Tim%20-%20Truc%20Nhan.mp3",
-              "Luotthich": "1"
-            }
-          ]
+        songs
     )
 })
 
