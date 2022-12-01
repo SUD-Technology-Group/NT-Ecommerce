@@ -58,10 +58,10 @@ router.get('/songbanner.php', (req, res, next) => {
         {
             id: '1',
             image: 'https://avatar-ex-swe.nixcdn.com/slideshow/2022/11/30/4/7/e/1/1669804126301_org.jpg',
-            content: 'Ca khúc của Soobin Hoàng Sơn gửi đến mọi người',
+            content: 'Ca khúc mới cũa Lady Mây gửi đến mọi người',
             songid: '4',
-            songname: 'I Know U Know',
-            songimage: 'https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/iknowuknow500.jpg',
+            songname: 'Tình yêu đến sau',
+            songimage: 'https://nguoinoitieng.tv/images/nnt/102/0/bglq.jpg',
         },
         {
             id: '2',
