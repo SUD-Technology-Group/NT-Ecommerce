@@ -88,7 +88,7 @@ app.get('/API/songbanner.php', (req, res, next) => {
       ])
 })
 
-app.get('/API/albumhot.php', (req, res, next) => {
+app.get('/API/albumhot', (req, res, next) => {
     return res.json(
         [
             {
