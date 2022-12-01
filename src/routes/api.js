@@ -1,5 +1,6 @@
 
 const express = require('express');
+
 const router = express.Router();
 
 router.get('/songbanner.php', (req, res, next) => {
@@ -50,6 +51,128 @@ router.get('/albumhot', (req, res, next) => {
               "HinhanhAlbum": "https://jokopie.000webhostapp.com/HinhAnh/Album/thaylayeuthuong.jpg"
             }
         ]
+    )
+})
+
+router.get('/baihatyeuthich.php', (req, res, next) => {
+    return res.json(
+        [
+            {
+              "Idbaihat": "1",
+              "Tenbaihat": "Thấy Là Yêu Thương",
+              "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/Album/thaylayeuthuong.jpg",
+              "Casi": "OnlyC, Lou Hoàng",
+              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Thay%20La%20Yeu%20Thuong%20-%20OnlyC.mp3",
+              "Luotthich": "1"
+            },
+            {
+              "Idbaihat": "3",
+              "Tenbaihat": "Memories",
+              "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/memories.jpg",
+              "Casi": "Maroon 5",
+              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Memories-Maroon5-6091839.mp3",
+              "Luotthich": "1"
+            },
+            {
+              "Idbaihat": "4",
+              "Tenbaihat": "I Know U Know",
+              "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/iknowuknow500.jpg",
+              "Casi": "Soobin Hoàng Sơn",
+              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/IKnowYouKnow-SoobinHoangSon-5430867.mp3",
+              "Luotthich": "1"
+            },
+            {
+              "Idbaihat": "5",
+              "Tenbaihat": "Có Em",
+              "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/Coem.jpg",
+              "Casi": "Madihu ft LowG",
+              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Co-Em-Madihu-ft-Low-G.mp3",
+              "Luotthich": "1"
+            },
+            {
+              "Idbaihat": "6",
+              "Tenbaihat": "Có Không Giữ Mất Đừng Tìm ",
+              "Hinhbaihat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/162668.jpg",
+              "Casi": "Trúc Nhân ",
+              "Linkbaihat": "https://jokopie.000webhostapp.com/Nhac/Co%20Khong%20Giu%20Mat%20Dung%20Tim%20-%20Truc%20Nhan.mp3",
+              "Luotthich": "1"
+            }
+          ]
+    )
+})
+
+
+router.get('/playlistforcurrentday.php', (req, res, next) => {
+    return res.json(
+        [
+            {
+              "IdPlaylist": "1",
+              "Ten": "Top 100 POP Âu Mỹ Hay Nhất",
+              "HinhPlaylist": "https://jokopie.000webhostapp.com/HinhAnh/playlist/backgroundtoppop2020.jpg",
+              "Icon": "https://jokopie.000webhostapp.com/HinhAnh/playlist/top100popaumy.jpg"
+            }
+          ]
+    )
+})
+
+router.get('/chudevatheloai.php', (req, res, next) => {
+    return res.json(
+        {
+            "theloai": [
+              {
+                "IdTheloai": "1",
+                "IdKeyChuDe": "1",
+                "TenTheLoai": "Acoustic EDM",
+                "HinhTheLoai": "https://jokopie.000webhostapp.com/HinhAnh/the%20loai/acousticedm.jpg"
+              }
+            ],
+            "chude": [
+              {
+                "IdChuDe": "1",
+                "TenChuDe": "Acoustic",
+                "HinhChuDe": "https://jokopie.000webhostapp.com/HinhAnh/chu%20de/acoustic.jpg"
+              }
+            ]
+          }
+    )
+})
+
+router.get('/danhsachcacplaylist.php', (req, res, next) => {
+    return res.json(
+        [
+            {
+              "IdPlaylist": "1",
+              "Ten": "Top 100 POP Âu Mỹ Hay Nhất",
+              "HinhPlaylist": "https://jokopie.000webhostapp.com/HinhAnh/playlist/backgroundtoppop2020.jpg",
+              "Icon": "https://jokopie.000webhostapp.com/HinhAnh/playlist/top100popaumy.jpg"
+            }
+          ]
+    )
+})
+
+router.get('/tatcachude.php', (req, res, next) => {
+    return res.json(
+        [
+            {
+              "IdAlbum": "1",
+              "TenAlbum": "Thấy là yêu thương ( Single )",
+              "TenCaSiAlbum": "onlyC",
+              "HinhAlbum": "https://jokopie.000webhostapp.com/HinhAnh/Album/thaylayeuthuong.jpg"
+            }
+          ]
+    )
+})
+
+router.get('/tatcaalbum.php', (req, res, next) => {
+    return res.json(
+        [
+            {
+              "IdAlbum": "1",
+              "TenAlbum": "Thấy là yêu thương ( Single )",
+              "TenCaSiAlbum": "onlyC",
+              "HinhAlbum": "https://jokopie.000webhostapp.com/HinhAnh/Album/thaylayeuthuong.jpg"
+            }
+          ]
     )
 })
 
