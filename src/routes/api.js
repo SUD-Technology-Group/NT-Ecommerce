@@ -178,16 +178,9 @@ router.get('/tatcaalbum.php', (req, res, next) => {
 })
 
 router.post('/danhsachbaihat.php', (req, res, next) => {
-    return res.json([
-        {
-            "Idbaihat": "1",
-            "Tenbaihat": "Phố đã lên đèn",
-            "Hinhbaihat": "https://nguoinoitieng.tv/images/nnt/102/0/bglq.jpg",
-            "Casi": "Huyền Tâm Môn",
-            "Linkbaihat": "https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Pho%20Da%20Len%20Den%20-%20Huyen%20Tam%20Mon%20-%20Huyen%20T.mp3?alt=media&token=f80a6884-1d6a-4ca2-86ee-2029e54afc1a",
-            "Luotthich": "1"
-          },
-    ])
+    const id = req.body.idquangcao;
+    let data = songs.filter(s => s.Idbaihat == id);
+    return res.json(data);
 })
 
 
