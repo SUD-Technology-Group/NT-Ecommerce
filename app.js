@@ -31,14 +31,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 db.connect();
 
-app.get('/API', (req, res, next) => {
-    return res.json({data: {
+app.get('/thongAPI', (req, res, next) => {
+    return res.json([
+        {
         idBaiHat: '1',
         tenBaiHat: 'Bones',
         artist: 'Image Dragon',
         hinhBaiHat: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDYed5whEf4g&psig=AOvVaw2FsKSZqxSgsSNWLcU63E9E&ust=1669970414277000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICM_9yC2PsCFQAAAAAdAAAAABAE',
         url: 'https://zingmp3.vn/bai-hat/Bones-Studio-Acoustic-Jess-Matt/ZWAAWII0.html'
-    }})
+    }])
 })
 
 app.get('/API/songbanner.php', (req, res, next) => {
