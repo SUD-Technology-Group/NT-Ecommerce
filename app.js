@@ -31,6 +31,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 db.connect();
 
+app.get('/API', (req, res, next) => {
+    return res.json({data: {
+        id: 'BH1',
+        name: 'Phia sau 1 co gai',
+        image: 'banner1',
+        slug: 'phia-sau-mot-co-gai'
+    }})
+})
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
