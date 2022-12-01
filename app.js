@@ -34,17 +34,17 @@ db.connect();
 app.get('/thongAPI', (req, res, next) => {
     return res.json([
         {
-        idBaiHat: '1',
-        tenBaiHat: 'Bones',
+        songid: '1',
+        songname: 'Bones',
         artist: 'Image Dragon',
-        hinhBaiHat: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDYed5whEf4g&psig=AOvVaw2FsKSZqxSgsSNWLcU63E9E&ust=1669970414277000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICM_9yC2PsCFQAAAAAdAAAAABAE',
+        songimage: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDYed5whEf4g&psig=AOvVaw2FsKSZqxSgsSNWLcU63E9E&ust=1669970414277000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICM_9yC2PsCFQAAAAAdAAAAABAE',
         url: 'https://zingmp3.vn/bai-hat/Bones-Studio-Acoustic-Jess-Matt/ZWAAWII0.html'
         },
         {
-            idBaiHat: '2',
-            tenBaiHat: 'Bones',
+            songid: '2',
+            songname: 'Bones',
             artist: 'Image Dragon',
-            hinhBaiHat: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDYed5whEf4g&psig=AOvVaw2FsKSZqxSgsSNWLcU63E9E&ust=1669970414277000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICM_9yC2PsCFQAAAAAdAAAAABAE',
+            songimage: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDYed5whEf4g&psig=AOvVaw2FsKSZqxSgsSNWLcU63E9E&ust=1669970414277000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICM_9yC2PsCFQAAAAAdAAAAABAE',
             url: 'https://zingmp3.vn/bai-hat/Bones-Studio-Acoustic-Jess-Matt/ZWAAWII0.html'
         }
     ])
@@ -54,36 +54,36 @@ app.get('/API/songbanner.php', (req, res, next) => {
     
     return res.json([
         {
-          "IDQuangCao": "1",
-          "HinhAnh": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/iknowuknow.jpg",
-          "NoiDung": "Ca khúc của Soobin Hoàng Sơn gửi đến mọi người",
-          "IdBaiHat": "4",
-          "TenBaiHat": "I Know U Know",
-          "HinhBaiHat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/iknowuknow500.jpg"
+          "id": "1",
+          "image": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/iknowuknow.jpg",
+          "content": "Ca khúc của Soobin Hoàng Sơn gửi đến mọi người",
+          "songid": "4",
+          "songname": "I Know U Know",
+          "songimage": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/iknowuknow500.jpg"
         },
         {
-          "IDQuangCao": "2",
-          "HinhAnh": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault.jpg",
-          "NoiDung": "Một bài hát mới của Madihu",
-          "IdBaiHat": "5",
-          "TenBaiHat": "Có Em",
-          "HinhBaiHat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/Coem.jpg"
+          "id": "2",
+          "image": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault.jpg",
+          "content": "Một bài hát mới của Madihu",
+          "songid": "5",
+          "songname": "Có Em",
+          "songimage": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/Coem.jpg"
         },
         {
-          "IDQuangCao": "3",
-          "HinhAnh": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault%20(1).jpg",
-          "NoiDung": "Một bài hát mới của Trúc Nhân ",
-          "IdBaiHat": "6",
-          "TenBaiHat": "Có Không Giữ Mất Đừng Tìm ",
-          "HinhBaiHat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/162668.jpg"
+          "id": "3",
+          "image": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault%20(1).jpg",
+          "content": "Một bài hát mới của Trúc Nhân ",
+          "songid": "6",
+          "songname": "Có Không Giữ Mất Đừng Tìm ",
+          "songimage": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/162668.jpg"
         },
         {
-          "IDQuangCao": "4",
-          "HinhAnh": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault%20(2).jpg",
-          "NoiDung": "Một bài hát mới của Hoàng Dũng ",
-          "IdBaiHat": "7",
-          "TenBaiHat": "Tôi Muốn Làm Cái Cây",
-          "HinhBaiHat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/1652170036557_640.jpg"
+          "id": "4",
+          "image": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault%20(2).jpg",
+          "content": "Một bài hát mới của Hoàng Dũng ",
+          "songid": "7",
+          "songname": "Tôi Muốn Làm Cái Cây",
+          "songimage": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/1652170036557_640.jpg"
         }
       ])
 })
