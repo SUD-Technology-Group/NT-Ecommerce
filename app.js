@@ -77,7 +77,40 @@ app.get('/API/songbanner.php', (req, res, next) => {
         }
       ]
     
-    return res.json({data})
+    return res.json([
+        {
+          "IDQuangCao": "1",
+          "HinhAnh": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/iknowuknow.jpg",
+          "NoiDung": "Ca khúc của Soobin Hoàng Sơn gửi đến mọi người",
+          "IdBaiHat": "4",
+          "TenBaiHat": "I Know U Know",
+          "HinhBaiHat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/iknowuknow500.jpg"
+        },
+        {
+          "IDQuangCao": "2",
+          "HinhAnh": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault.jpg",
+          "NoiDung": "Một bài hát mới của Madihu",
+          "IdBaiHat": "5",
+          "TenBaiHat": "Có Em",
+          "HinhBaiHat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/Coem.jpg"
+        },
+        {
+          "IDQuangCao": "3",
+          "HinhAnh": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault%20(1).jpg",
+          "NoiDung": "Một bài hát mới của Trúc Nhân ",
+          "IdBaiHat": "6",
+          "TenBaiHat": "Có Không Giữ Mất Đừng Tìm ",
+          "HinhBaiHat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/162668.jpg"
+        },
+        {
+          "IDQuangCao": "4",
+          "HinhAnh": "https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault%20(2).jpg",
+          "NoiDung": "Một bài hát mới của Hoàng Dũng ",
+          "IdBaiHat": "7",
+          "TenBaiHat": "Tôi Muốn Làm Cái Cây",
+          "HinhBaiHat": "https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/1652170036557_640.jpg"
+        }
+      ])
 })
 app.use('/', indexRouter);
 
