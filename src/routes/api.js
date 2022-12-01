@@ -7,7 +7,7 @@ router.get('/songbanner.php', (req, res, next) => {
     return res.json([
         {
           "id": "1",
-          "image": "https://www.nhaccuatui.com/bai-hat/u-me-em-kay-tran.vwrXWDDu5bVj.html",
+          "image": "https://avatar-ex-swe.nixcdn.com/slideshow/2022/11/30/4/7/e/1/1669804126301_org.jpg",
           "content": "Ca khúc của Soobin Hoàng Sơn gửi đến mọi người",
           "songid": "4",
           "songname": "I Know U Know",
