@@ -33,10 +33,11 @@ db.connect();
 
 app.get('/API', (req, res, next) => {
     return res.json({data: {
-        id: 'BH1',
-        name: 'Phia sau 1 co gai',
-        image: 'banner1',
-        slug: 'phia-sau-mot-co-gai'
+        idBaiHat: '1',
+        tenBaiHat: 'Bones',
+        artist: 'Image Dragon',
+        hinhBaiHat: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDYed5whEf4g&psig=AOvVaw2FsKSZqxSgsSNWLcU63E9E&ust=1669970414277000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCICM_9yC2PsCFQAAAAAdAAAAABAE',
+        url: 'https://zingmp3.vn/bai-hat/Bones-Studio-Acoustic-Jess-Matt/ZWAAWII0.html'
     }})
 })
 app.use('/', indexRouter);
