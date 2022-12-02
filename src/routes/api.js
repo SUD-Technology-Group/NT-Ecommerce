@@ -175,4 +175,9 @@ router.post('/danhsachbaihat.php', (req, res, next) => {
     return res.json(data);
 });
 
+router.post('/addMusic', (req, res, next) => {
+    let { Idbaihat, Tenbaihat, Hinhbaihat, Casi, Linkbaihat, Luotthich } = req.body;
+    songs.add({...req.body});
+})
+
 module.exports = router;
