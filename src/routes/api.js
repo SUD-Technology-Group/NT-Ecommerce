@@ -53,6 +53,8 @@ let songs = [
     },
 ];
 
+let playlist = [];
+
 router.get('/songbanner.php', (req, res, next) => {
     return res.json([
         {
@@ -177,7 +179,7 @@ router.post('/danhsachbaihat.php', (req, res, next) => {
 
 router.post('/addMusic', (req, res, next) => {
     let { Idbaihat, Tenbaihat, Hinhbaihat, Casi, Linkbaihat, Luotthich } = req.body;
-    songs.add({...req.body});
+    playlist.add({...req.body});
     return res.json(true);
 })
 
