@@ -180,7 +180,7 @@ router.post('/danhsachbaihat.php', (req, res, next) => {
 router.post('/addMusic', (req, res, next) => {
     let { Idbaihat, Tenbaihat, Hinhbaihat, Casi, Linkbaihat, Luotthich } = req.body;
     playlist.add({...req.body});
-    return res.json({success: true});
+    return res.json(true);
 })
 
 router.get('playlist', (req, res, next) => {
