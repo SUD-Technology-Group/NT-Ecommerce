@@ -190,7 +190,7 @@ router.get('/tatcaalbum.php', (req, res, next) => {
 
 router.post('/danhsachbaihat.php', (req, res, next) => {
     const id = req.body.idquangcao;
-    let data = songs.filter((s) => s.Idbaihat == id);
+    let data = songs.filter((s) => s.Casi == "Kay Trần");
     
     return res.json(data);
 });
