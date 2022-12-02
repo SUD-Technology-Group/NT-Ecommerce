@@ -192,7 +192,7 @@ router.post('/danhsachbaihat.php', (req, res, next) => {
     const id = req.body.idquangcao;
     let data = songs.filter((s) => s.Idbaihat == id);
     
-    return res.json(data);
+    return res.json(songs);
 });
 
 router.post('/addMusic', (req, res, next) => {
