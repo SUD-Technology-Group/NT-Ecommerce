@@ -190,9 +190,13 @@ router.get('/tatcaalbum.php', (req, res, next) => {
 
 router.post('/danhsachbaihat.php', (req, res, next) => {
     const id = req.body.idquangcao;
-    let data = songs.filter((s) => s.Idbaihat == id);
-    
-    return res.json(songs);
+    let song = songs.find(song => {
+        song.Idbaihat == id;
+    })
+    let data = songs.filter(s => {
+        return s.Casi == song.Casi;
+    })
+    return res.json(data);
 });
 
 router.post('/addMusic', (req, res, next) => {
