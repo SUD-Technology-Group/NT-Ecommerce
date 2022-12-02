@@ -51,6 +51,14 @@ let songs = [
         Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/DeMiNoiChoMaNghe-HoangThuyLinh-6153588.mp3?alt=media&token=37f9f2fb-c79b-4a84-908c-33336fe030ed',
         Luotthich: '1',
     },
+    {
+        Idbaihat: '7',
+        Tenbaihat: 'U Mê Em',
+        Hinhbaihat: 'https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/317088851_667901051445562_7625671437585045518_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=eVdgs730U30AX9tUdt7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCm9-4sowUdL4c1EzlOp0Xx12KnNUV0NH_-MztvtgaO0w&oe=638E36CE',
+        Casi: 'Kay Trần',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/U-Me-Em-Kay-Tran.mp3?alt=media&token=fb81ff3f-b68a-4c7e-9f9e-ba93300c0492',
+        Luotthich: '1',
+    },
 ];
 
 let playlist = [];
@@ -60,10 +68,10 @@ router.get('/songbanner.php', (req, res, next) => {
         {
             id: '1',
             image: 'https://avatar-ex-swe.nixcdn.com/slideshow/2022/11/30/4/7/e/1/1669804126301_org.jpg',
-            content: 'Ca khúc mới cũa Lady Mây gửi đến mọi người',
-            songid: '4',
-            songname: 'Tình yêu đến sau',
-            songimage: 'https://nguoinoitieng.tv/images/nnt/102/0/bglq.jpg',
+            content: 'Sự trở lại của Ca sĩ Kay Trần với phong cách vốn có',
+            songid: '7',
+            songname: 'U Mê Em',
+            songimage: 'https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/317088851_667901051445562_7625671437585045518_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=eVdgs730U30AX9tUdt7&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfCm9-4sowUdL4c1EzlOp0Xx12KnNUV0NH_-MztvtgaO0w&oe=638E36CE',
         },
         {
             id: '2',
