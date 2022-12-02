@@ -196,7 +196,7 @@ router.post('/danhsachbaihat.php', (req, res, next) => {
     let data = songs.filter(s => {
         return s.Casi == song.Casi;
     })
-    return res.json(data);
+    return res.json([song]);
 });
 
 router.post('/addMusic', (req, res, next) => {
