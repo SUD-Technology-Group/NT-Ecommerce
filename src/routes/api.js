@@ -59,6 +59,15 @@ let songs = [
         Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/U-Me-Em-Kay-Tran.mp3?alt=media&token=fb81ff3f-b68a-4c7e-9f9e-ba93300c0492',
         Luotthich: '1',
     },
+    {
+        Idbaihat: '8',
+        Tenbaihat: 'Nắm đôi bàn tay',
+        Hinhbaihat: 'https://i.scdn.co/image/ab67616d0000b273f029f9dac64d40aa1277ced9',
+        Casi: 'Kay Trần',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Nam%20Doi%20Ban%20Tay%20-%20Kay%20Tran.mp3?alt=media&token=76621c4e-4368-4cfd-b2a7-bfe8d7ce1ed7',
+        Luotthich: '1',
+    },
+    
 ];
 
 let playlist = [];
@@ -182,6 +191,10 @@ router.get('/tatcaalbum.php', (req, res, next) => {
 router.post('/danhsachbaihat.php', (req, res, next) => {
     const id = req.body.idquangcao;
     let data = songs.filter((s) => s.Idbaihat == id);
+    songs.forEach(song => {
+        if(data[0].Casi == song.Casi)
+            data.add(song);
+    })
     return res.json(data);
 });
 
