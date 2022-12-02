@@ -67,6 +67,14 @@ let songs = [
         Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Nam%20Doi%20Ban%20Tay%20-%20Kay%20Tran.mp3?alt=media&token=76621c4e-4368-4cfd-b2a7-bfe8d7ce1ed7',
         Luotthich: '1',
     },
+    {
+        Idbaihat: '9',
+        Tenbaihat: 'Ý em sao',
+        Hinhbaihat: 'https://avatar-ex-swe.nixcdn.com/playlist/2018/02/25/d/c/6/1/1519545654473_500.jpg',
+        Casi: 'Kay Trần - Ft. Lăng LD',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Y%20Em%20Sao%20-%20Kay%20Tran_%20Lang%20LD.mp3?alt=media&token=b3e91ea0-fa7f-484c-ae90-7b67ef71feec',
+        Luotthich: '1',
+    },
     
 ];
 
@@ -192,7 +200,7 @@ router.post('/danhsachbaihat.php', (req, res, next) => {
     const id = req.body.idquangcao;
     let song = songs.find(song => song.Idbaihat == id);
     let data = songs.filter((s) => {
-        return s.Casi == song.Casi;
+        return s.Casi.match(song.Casi);
     });
     
     return res.json(data);
