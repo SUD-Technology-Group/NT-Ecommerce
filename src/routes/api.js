@@ -180,7 +180,11 @@ router.post('/danhsachbaihat.php', (req, res, next) => {
 router.post('/addMusic', (req, res, next) => {
     let { Idbaihat, Tenbaihat, Hinhbaihat, Casi, Linkbaihat, Luotthich } = req.body;
     playlist.add({...req.body});
-    return res.json(true);
+    return res.json("True");
+})
+
+router.get('playlist', (req, res, next) => {
+    return res.json(playlist);
 })
 
 module.exports = router;
