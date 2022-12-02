@@ -191,10 +191,7 @@ router.get('/tatcaalbum.php', (req, res, next) => {
 router.post('/danhsachbaihat.php', (req, res, next) => {
     const id = req.body.idquangcao;
     let data = songs.filter((s) => s.Idbaihat == id);
-    songs.forEach(song => {
-        if(data[0].Casi == song.Casi && song != data[0])
-            data.add(song);
-    })
+    
     return res.json(data);
 });
 
