@@ -130,7 +130,7 @@ router.get('/albumhot', (req, res, next) => {
 
 router.get('/baihatyeuthich.php', (req, res, next) => {
     let data = songs.sort((a, b) => 0.5 - Math.random());
-    return res.json(songs);
+    return res.json(data);
 });
 
 router.get('/playlistforcurrentday.php', (req, res, next) => {
