@@ -185,7 +185,8 @@ router.post('/baihatAlbum', (req, res, next) => {
 })
 
 router.get('/baihatyeuthich.php', (req, res, next) => {
-    let data = songs.sort((a, b) => 0.5 - Math.random());
+    let data = songs.filter(s => parseInt(s.Luotthich) == 1)
+    .sort((a, b) => 0.5 - Math.random());
     return res.json(data);
 });
 
