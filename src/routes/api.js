@@ -91,6 +91,14 @@ let songs = [
         Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Thay%20Toi%20Yeu%20Co%20Ay%20-%20Thanh%20Hung%20Idol.mp3?alt=media&token=e11aaaf2-9683-4148-982b-88c14bc39146',
         Luotthich: '1',
     },
+    {
+        Idbaihat: '12',
+        Tenbaihat: 'Chìm sâu',
+        Hinhbaihat: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/5/8/7/b5872b1c59b204d088e8b01d989a8990.jpg',
+        Casi: 'MCK - Ft. Trung Trần',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Chim%20Sau%20-%20MCK_%20Trung%20Tran.mp3?alt=media&token=3b9b17e9-f9a8-4b75-a1fc-5e4f95f816d0',
+        Luotthich: '1',
+    },
     
 ];
 
@@ -116,11 +124,11 @@ router.get('/songbanner.php', (req, res, next) => {
         },
         {
             id: '3',
-            image: 'https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault%20(1).jpg',
-            content: 'Một bài hát mới của Trúc Nhân ',
-            songid: '6',
-            songname: 'Có Không Giữ Mất Đừng Tìm ',
-            songimage: 'https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/162668.jpg',
+            image: 'https://i.ytimg.com/vi/zHM-zTlBTX4/maxresdefault.jpg',
+            content: 'Hot rapper MCK với dòng nhạc hiện đại',
+            songid: '12',
+            songname: 'Chìm sâu',
+            songimage: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/5/8/7/b5872b1c59b204d088e8b01d989a8990.jpg',
         },
         {
             id: '4',
