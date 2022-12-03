@@ -270,8 +270,9 @@ router.post('/addMusic', (req, res, next) => {
     return res.json(true);
 })
 
-router.get('playlist', (req, res, next) => {
-    return res.json(playlist);
+router.get('/playlist', (req, res, next) => {
+    let data = songs.filter(s => parseInt(s.Luotthich) > 1);
+    return res.json(data);
 })
 
 router.post('/updateluotthich', (req, res, next) => {
