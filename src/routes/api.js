@@ -95,7 +95,7 @@ let songs = [
         Idbaihat: '12',
         Tenbaihat: 'Chìm sâu',
         Hinhbaihat: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/5/8/7/b5872b1c59b204d088e8b01d989a8990.jpg',
-        Casi: 'MCK - Ft. Trung Trần',
+        Casi: 'MCK',
         Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Chim%20Sau%20-%20MCK_%20Trung%20Tran.mp3?alt=media&token=3b9b17e9-f9a8-4b75-a1fc-5e4f95f816d0',
         Luotthich: '1',
         IdAlbum: '1'
@@ -185,7 +185,8 @@ router.post('/baihatAlbum', (req, res, next) => {
 })
 
 router.get('/baihatyeuthich.php', (req, res, next) => {
-    let data = songs.sort((a, b) => 0.5 - Math.random());
+    let data = songs.filter(s => parseInt(s.Luotthich) > 1)
+    .sort((a, b) => 0.5 - Math.random());
     return res.json(data);
 });
 
