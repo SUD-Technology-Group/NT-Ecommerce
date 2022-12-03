@@ -353,8 +353,21 @@ router.post('/removeplaylist', (req, res, next) => {
 router.post('/searchbaihat', (req, res, next) => {
     const key = req.body.tukhoa;
     const regex = new RegExp(key, 'gi');
-    let data = songs.filter(s => s.Tenbaihat.match(regex) || s.Casi.match(regex));
+    let data = songs.filter(s => removeAscent(s.Tenbaihat).match(regex) || removeAscent(s.Casi).match(regex));
     return res.json(data);
 })
+
+function removeAscent (str) {
+    if (str === null || str === undefined) return str;
+    str = str.toLowerCase();
+    str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+    str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+    str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+    str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+    str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+    str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+    str = str.replace(/đ/g, "d");
+    return str;
+  }
 
 module.exports = router;
