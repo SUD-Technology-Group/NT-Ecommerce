@@ -75,6 +75,14 @@ let songs = [
         Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Y%20Em%20Sao%20-%20Kay%20Tran_%20Lang%20LD.mp3?alt=media&token=b3e91ea0-fa7f-484c-ae90-7b67ef71feec',
         Luotthich: '1',
     },
+    {
+        Idbaihat: '10',
+        Tenbaihat: 'Tệ thật, anh nhớ em',
+        Hinhbaihat: 'https://i1.sndcdn.com/artworks-1S4eIP0ueTzbRnxN-NLzytg-t500x500.jpg',
+        Casi: 'Thanh Hưng',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Te%20That_%20Anh%20Nho%20Em%20-%20Thanh%20Hung.mp3?alt=media&token=f29ecdb2-3041-4c17-a39c-5fac65d82c11',
+        Luotthich: '1',
+    },
     
 ];
 
@@ -92,11 +100,11 @@ router.get('/songbanner.php', (req, res, next) => {
         },
         {
             id: '2',
-            image: 'https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault.jpg',
-            content: 'Một bài hát mới của Madihu',
-            songid: '5',
-            songname: 'Có Em',
-            songimage: 'https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/Coem.jpg',
+            image: 'https://avatar-ex-swe.nixcdn.com/mv/2022/04/15/7/7/2/4/1650016194910_640.jpg',
+            content: 'Một bản nhạc Ballad xé lòng FA',
+            songid: '10',
+            songname: 'Tệ thật, anh nhớ em',
+            songimage: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Te%20That_%20Anh%20Nho%20Em%20-%20Thanh%20Hung.mp3?alt=media&token=f29ecdb2-3041-4c17-a39c-5fac65d82c11',
         },
         {
             id: '3',
