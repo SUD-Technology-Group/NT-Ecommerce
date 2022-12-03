@@ -278,6 +278,7 @@ router.post('/updateluotthich', (req, res, next) => {
     const id = req.body.idbaihat;
     let index = songs.findIndex(s => s.Idbaihat == id);
     songs[index].Luotthich = (parseInt(songs[index].Luotthich) + 1).toString();
+    playlist.add(songs[index]);
     return res.json("Success");
 })
 
