@@ -78,9 +78,9 @@ let songs = [
     {
         Idbaihat: '10',
         Tenbaihat: 'Tệ thật, anh nhớ em',
-        Hinhbaihat: 'https://zmp3-photo-fbcrawler.zmdcdn.me/avatars/e/7/4/7/e747f412594da44531a37b1ee8340ec0.jpg',
+        Hinhbaihat: 'https://avatar-ex-swe.nixcdn.com/song/2022/03/03/0/1/3/6/1646267009685.jpg',
         Casi: 'Thanh Hưng',
-        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Te%20That_%20Anh%20Nho%20Em%20-%20Thanh%20Hung.mp3?alt=media&token=f29ecdb2-3041-4c17-a39c-5fac65d82c11',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Te%CC%A3%CC%82%20tha%CC%A3%CC%82t%20anh%20nho%CC%9B%CC%81%20em.mp3?alt=media&token=d348ad13-2030-4c64-89dc-9f68919115e5',
         Luotthich: '1',
     },
     {
@@ -117,7 +117,7 @@ router.get('/songbanner.php', (req, res, next) => {
         },
         {
             id: '2',
-            image: 'https://avatar-ex-swe.nixcdn.com/mv/2022/04/15/7/7/2/4/1650016194910_640.jpg',
+            image: 'https://avatar-ex-swe.nixcdn.com/song/2022/03/03/0/1/3/6/1646267009685.jpg',
             content: 'Một bản nhạc Ballad xé lòng FA',
             songid: '10',
             songname: 'Tệ thật, anh nhớ em',
