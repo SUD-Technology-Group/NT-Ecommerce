@@ -350,4 +350,10 @@ router.post('/removeplaylist', (req, res, next) => {
     return res.json("Success");
 })
 
+router.post('/searchbaihat', (req, res, next) => {
+    const key = req.body.tukhoa;
+    let data = songs.filter(s => s.Tenbaihat.match(key) || s.Casi.match(key));
+    return res.json(data);
+})
+
 module.exports = router;
