@@ -121,6 +121,7 @@ router.get('/songbanner.php', (req, res, next) => {
             songid: '10',
             songname: 'Tệ thật, anh nhớ em',
             songimage: 'https://zmp3-photo-fbcrawler.zmdcdn.me/avatars/e/7/4/7/e747f412594da44531a37b1ee8340ec0.jpg',
+            
         },
         {
             id: '3',
@@ -129,15 +130,9 @@ router.get('/songbanner.php', (req, res, next) => {
             songid: '12',
             songname: 'Chìm sâu',
             songimage: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/5/8/7/b5872b1c59b204d088e8b01d989a8990.jpg',
+            IdAlbum: "1"
         },
-        {
-            id: '4',
-            image: 'https://jokopie.000webhostapp.com/HinhAnh/quang%20cao/maxresdefault%20(2).jpg',
-            content: 'Một bài hát mới của Hoàng Dũng ',
-            songid: '7',
-            songname: 'Tôi Muốn Làm Cái Cây',
-            songimage: 'https://jokopie.000webhostapp.com/HinhAnh/bai%20hat/1652170036557_640.jpg',
-        },
+        
     ]);
 });
 
@@ -145,12 +140,22 @@ router.get('/albumhot', (req, res, next) => {
     return res.json([
         {
             IdAlbum: '1',
-            TenAlbum: 'Thấy là yêu thương ( Single )',
-            TencasiAlbum: 'onlyC',
-            HinhanhAlbum: 'https://jokopie.000webhostapp.com/HinhAnh/Album/thaylayeuthuong.jpg',
+            TenAlbum: 'Best of MCK',
+            TencasiAlbum: 'MCK',
+            HinhanhAlbum: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/5/8/7/b5872b1c59b204d088e8b01d989a8990.jpg',
         },
     ]);
 });
+
+router.post('/baihatAlbum', (req, res, next) => {
+    const id = req.body.idalbum;
+    let data = songs.filter(s =>  {
+        if (s.IdAlbum)
+            return s.IdAlbum == id;
+    })
+
+    return res.json(data);
+})
 
 router.get('/baihatyeuthich.php', (req, res, next) => {
     let data = songs.sort((a, b) => 0.5 - Math.random());
