@@ -282,4 +282,11 @@ router.post('/updateluotthich', (req, res, next) => {
     return res.json("Success");
 })
 
+router.post('/removeplaylist', (req, res, next) => {
+    const id = req.body.idbaihat;
+    let index = songs.findIndex(s => s.Idbaihat == id);
+    songs[index].Luotthich = (parseInt(songs[index].Luotthich) - 1).toString();
+    return res.json("Success");
+})
+
 module.exports = router;
