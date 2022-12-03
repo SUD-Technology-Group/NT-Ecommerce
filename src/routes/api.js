@@ -127,6 +127,60 @@ let songs = [
         Luotthich: '1',
         IdAlbum: '1'
     },
+    {
+        Idbaihat: '16',
+        Tenbaihat: 'Nàng Thơ',
+        Hinhbaihat: 'https://trixie.com.vn/media/images/article/68940512/unnamed.jpg',
+        Casi: 'Hoàng Dũng',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Na%CC%80ng%20tho%CC%9B.mp3?alt=media&token=c641f3b4-8e9e-4a27-95b1-de03e2d9a2ce',
+        Luotthich: '1',
+        IdAlbum: '2'
+    },
+    {
+        Idbaihat: '17',
+        Tenbaihat: 'Có hẹn với thanh xuân',
+        Hinhbaihat: 'https://trixie.com.vn/media/images/article/68940512/unnamed.jpg',
+        Casi: 'Hoàng Dũng Ft - Grey D',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Co%CC%81%20he%CC%A3n%20vo%CC%9B%CC%81i%20thanh%20xua%CC%82n.mp3?alt=media&token=27d83463-5ce9-4bdc-9ef7-dc0ede0e7698',
+        Luotthich: '1',
+        IdAlbum: '2'
+    },
+    {
+        Idbaihat: '18',
+        Tenbaihat: 'Thói quen',
+        Hinhbaihat: 'https://trixie.com.vn/media/images/article/68940512/unnamed.jpg',
+        Casi: 'Hoàng Dũng - Ft. GDucky',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Tho%CC%81i%20quen.mp3?alt=media&token=dcfc4831-152a-4e74-963b-b1fb1596b207',
+        Luotthich: '1',
+        IdAlbum: '2'
+    },
+    {
+        Idbaihat: '19',
+        Tenbaihat: 'Tình em là đại dương',
+        Hinhbaihat: 'https://trixie.com.vn/media/images/article/68940512/unnamed.jpg',
+        Casi: 'Hoàng Dũng - Ft. Grey D',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Ti%CC%80nh%20em%20la%CC%80%20%C4%91a%CC%A3i%20du%CC%9Bo%CC%9Bng.mp3?alt=media&token=02256b5d-6aa7-41b3-a325-147a90c18d82',
+        Luotthich: '1',
+        IdAlbum: '2'
+    },
+    {
+        Idbaihat: '20',
+        Tenbaihat: 'Vùng ký ức',
+        Hinhbaihat: 'https://trixie.com.vn/media/images/article/68940512/unnamed.jpg',
+        Casi: 'Hoàng Dũng',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Vu%CC%80ng%20ky%CC%81%20u%CC%9B%CC%81c.mp3?alt=media&token=9a82dced-31ae-402f-943d-3ef6e5fb34a5',
+        Luotthich: '1',
+        IdAlbum: '2'
+    },
+    {
+        Idbaihat: '21',
+        Tenbaihat: 'Khi cô đơn em nhớ ai',
+        Hinhbaihat: 'https://trixie.com.vn/media/images/article/68940512/unnamed.jpg',
+        Casi: 'Hoàng Dũng',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Khi%20co%CC%82%20%C4%91o%CC%9Bn%20em%20nho%CC%9B%CC%81%20ai.mp3?alt=media&token=032a58fa-e9d4-40f1-827a-546d7501207f',
+        Luotthich: '1',
+        IdAlbum: '2'
+    },
     
 ];
 
@@ -171,6 +225,12 @@ router.get('/albumhot', (req, res, next) => {
             TenAlbum: 'Best of MCK',
             TencasiAlbum: 'MCK',
             HinhanhAlbum: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/5/8/7/b5872b1c59b204d088e8b01d989a8990.jpg',
+        },
+        {
+            IdAlbum: '2',
+            TenAlbum: 'Album 25',
+            TencasiAlbum: 'Hoàng Dũng',
+            HinhanhAlbum: 'https://bizweb.dktcdn.net/100/411/628/products/127862489-2439595976345943-4295077121343092115-o-e06430d1-7190-4aab-bee0-90bba648b7f7.jpg?v=1607951103780',
         },
     ]);
 });
