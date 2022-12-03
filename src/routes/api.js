@@ -100,6 +100,33 @@ let songs = [
         Luotthich: '1',
         IdAlbum: '1'
     },
+    {
+        Idbaihat: '13',
+        Tenbaihat: 'Va vào giai điệu này',
+        Hinhbaihat: 'https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/5/8/7/b5872b1c59b204d088e8b01d989a8990.jpg',
+        Casi: 'MCK',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Va%20va%CC%80o%20giai%20%C4%91ie%CC%A3%CC%82u%20na%CC%80y.mp3?alt=media&token=af09e87c-d8d7-4bcf-924c-df1dc1714590',
+        Luotthich: '1',
+        IdAlbum: '1'
+    },
+    {
+        Idbaihat: '14',
+        Tenbaihat: 'Tại vì sao',
+        Hinhbaihat: 'https://avatar-ex-swe.nixcdn.com/song/2022/09/23/2/3/3/a/1663924304766.jpg',
+        Casi: 'MCK',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Ta%CC%A3i%20vi%CC%80%20sao.mp3?alt=media&token=34584069-26db-4611-8f1f-2e6d093416de',
+        Luotthich: '1',
+        IdAlbum: '1'
+    },
+    {
+        Idbaihat: '15',
+        Tenbaihat: 'Tay to',
+        Hinhbaihat: 'https://avatar-ex-swe.nixcdn.com/song/2021/07/09/5/5/8/2/1625828311511.jpg',
+        Casi: 'MCK',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Tay%20to.mp3?alt=media&token=a0baf2e4-ee77-4ad1-a968-03da37028605',
+        Luotthich: '1',
+        IdAlbum: '1'
+    },
     
 ];
 
