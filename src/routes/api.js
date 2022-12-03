@@ -284,7 +284,7 @@ router.post('/updateluotthich', (req, res, next) => {
 })
 
 router.post('/removeplaylist', (req, res, next) => {
-    const id = req.body.idbaihat;
+    const id = req.body.Idbaihat;
     let index = songs.findIndex(s => s.Idbaihat == id);
     songs[index].Luotthich = '1';
     return res.json("Success");
