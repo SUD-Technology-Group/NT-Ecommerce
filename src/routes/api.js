@@ -129,6 +129,7 @@ router.get('/albumhot', (req, res, next) => {
 });
 
 router.get('/baihatyeuthich.php', (req, res, next) => {
+    let data = songs.sort((a, b) => 0.5 - Math.random());
     return res.json(songs);
 });
 
@@ -173,6 +174,7 @@ router.get('/danhsachcacplaylist.php', (req, res, next) => {
         },
     ]);
 });
+
 
 router.get('/tatcachude.php', (req, res, next) => {
     return res.json([
