@@ -352,7 +352,7 @@ router.post('/removeplaylist', (req, res, next) => {
 
 router.post('/searchbaihat', (req, res, next) => {
     const key = req.body.tukhoa;
-    const regex = new RegExp(key, 'i');
+    const regex = new RegExp(key, 'gi');
     let data = songs.filter(s => s.Tenbaihat.match(regex) || s.Casi.match(regex));
     return res.json(data);
 })
