@@ -83,6 +83,14 @@ let songs = [
         Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Te%20That_%20Anh%20Nho%20Em%20-%20Thanh%20Hung.mp3?alt=media&token=f29ecdb2-3041-4c17-a39c-5fac65d82c11',
         Luotthich: '1',
     },
+    {
+        Idbaihat: '11',
+        Tenbaihat: 'Thay tôi yêu cô ấy',
+        Hinhbaihat: 'https://zmp3-photo-fbcrawler.zmdcdn.me/avatars/e/7/4/7/e747f412594da44531a37b1ee8340ec0.jpg',
+        Casi: 'Thanh Hưng',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Thay%20Toi%20Yeu%20Co%20Ay%20-%20Thanh%20Hung%20Idol.mp3?alt=media&token=e11aaaf2-9683-4148-982b-88c14bc39146',
+        Luotthich: '1',
+    },
     
 ];
 
