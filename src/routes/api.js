@@ -64,7 +64,7 @@ let songs = [
         Tenbaihat: 'Nắm đôi bàn tay',
         Hinhbaihat: 'https://i.scdn.co/image/ab67616d0000b273f029f9dac64d40aa1277ced9',
         Casi: 'Kay Trần',
-        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Nam%20Doi%20Ban%20Tay%20-%20Kay%20Tran.mp3?alt=media&token=76621c4e-4368-4cfd-b2a7-bfe8d7ce1ed7',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Na%CC%86%CC%81m%20%C4%91o%CC%82i%20ba%CC%80n%20tay.mp3?alt=media&token=5d6c417b-11d8-4b09-a08a-142b55351485',
         Luotthich: '1',
     },
     {
