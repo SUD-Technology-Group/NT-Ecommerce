@@ -150,8 +150,7 @@ router.get('/albumhot', (req, res, next) => {
 router.post('/baihatAlbum', (req, res, next) => {
     const id = req.body.idalbum;
     let data = songs.filter(s =>  {
-        if (s.IdAlbum)
-            return s.IdAlbum == id;
+        return s.IdAlbum == id;
     })
 
     return res.json(data);
