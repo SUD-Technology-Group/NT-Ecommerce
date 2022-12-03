@@ -72,7 +72,7 @@ let songs = [
         Tenbaihat: 'Ý em sao',
         Hinhbaihat: 'https://avatar-ex-swe.nixcdn.com/playlist/2018/02/25/d/c/6/1/1519545654473_500.jpg',
         Casi: 'Kay Trần - Ft. Lăng LD',
-        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Y%20Em%20Sao%20-%20Kay%20Tran_%20Lang%20LD.mp3?alt=media&token=b3e91ea0-fa7f-484c-ae90-7b67ef71feec',
+        Linkbaihat: 'https://firebasestorage.googleapis.com/v0/b/music-app-7af26.appspot.com/o/Y%CC%81%20em%20sao.mp3?alt=media&token=110ceb75-8e3d-4ebe-8474-9a7d9f52f826',
         Luotthich: '1',
     },
     {
