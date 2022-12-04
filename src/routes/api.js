@@ -261,6 +261,13 @@ router.get('/playlistforcurrentday.php', (req, res, next) => {
     ]);
 });
 
+router.post('/dailyplaylist', (req, res, next) => {
+    const id = req.body.idplaylist;
+    let data = songs.sort((a, b) => 0.5 - Math.random())
+    .slice(0,7)
+    return res.json(data)
+})
+
 router.get('/chudevatheloai.php', (req, res, next) => {
     return res.json({
         theloai: [
