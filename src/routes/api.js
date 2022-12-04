@@ -186,7 +186,7 @@ let songs = [
 
 let playlist = [];
 
-router.get('/songbanner.php', (req, res, next) => {
+router.get('/songbanner', (req, res, next) => {
     return res.json([
         {
             id: '1',
@@ -244,13 +244,13 @@ router.post('/baihatAlbum', (req, res, next) => {
     return res.json(data);
 })
 
-router.get('/baihatyeuthich.php', (req, res, next) => {
+router.get('/baihatyeuthich', (req, res, next) => {
     let data = songs.filter(s => parseInt(s.Luotthich) == 1)
     .sort((a, b) => 0.5 - Math.random());
     return res.json(data);
 });
 
-router.get('/playlistforcurrentday.php', (req, res, next) => {
+router.get('/playlistforcurrentday', (req, res, next) => {
     return res.json([
         {
             IdPlaylist: '1',
@@ -288,7 +288,7 @@ router.get('/chudevatheloai.php', (req, res, next) => {
     });
 });
 
-router.get('/danhsachcacplaylist.php', (req, res, next) => {
+router.get('/danhsachcacplaylist', (req, res, next) => {
     return res.json([
         {
             IdPlaylist: '1',
@@ -322,7 +322,7 @@ router.get('/tatcaalbum.php', (req, res, next) => {
     ]);
 });
 
-router.post('/danhsachbaihat.php', (req, res, next) => {
+router.post('/danhsachbaihat', (req, res, next) => {
     const id = req.body.idquangcao;
     let song = songs.find(song => song.Idbaihat == id);
     let data = songs.filter((s) => {
