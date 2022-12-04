@@ -246,7 +246,7 @@ router.post('/baihatAlbum', (req, res, next) => {
 
 router.get('/baihatyeuthich', (req, res, next) => {
     let data = songs.filter(s => parseInt(s.Luotthich) == 1)
-    .sort((a, b) => 0.5 - Math.random()).slice(0,6)
+    .sort((a, b) => 0.5 - Math.random()).slice(0,10)
     return res.json(data);
 });
 
