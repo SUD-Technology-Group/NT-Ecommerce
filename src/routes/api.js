@@ -254,8 +254,8 @@ router.get('/playlistforcurrentday.php', (req, res, next) => {
     return res.json([
         {
             IdPlaylist: '1',
-            Ten: 'Top 100 POP Âu Mỹ Hay Nhất',
-            HinhPlaylist: 'https://jokopie.000webhostapp.com/HinhAnh/playlist/backgroundtoppop2020.jpg',
+            Ten: 'Playlist mỗi ngày',
+            HinhPlaylist: 'https://musicdailypress.files.wordpress.com/2021/01/cropped-mdbanner2021a.jpg',
             Icon: 'https://jokopie.000webhostapp.com/HinhAnh/playlist/top100popaumy.jpg',
         },
     ]);
