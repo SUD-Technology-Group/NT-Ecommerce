@@ -256,7 +256,7 @@ router.get('/playlistforcurrentday.php', (req, res, next) => {
             IdPlaylist: '1',
             Ten: 'Playlist mỗi ngày',
             HinhPlaylist: 'https://musicdailypress.files.wordpress.com/2021/01/cropped-mdbanner2021a.jpg',
-            Icon: 'https://graphicriver.img.customer.envatousercontent.com/files/245400687/Main-Preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=590&s=dd8c0720bccbde0ffb43c1f2104081d9',
+            Icon: 'https://i1.sndcdn.com/avatars-000672542201-4elswl-t500x500.jpg',
         },
     ]);
 });
