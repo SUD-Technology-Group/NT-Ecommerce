@@ -1,9 +1,9 @@
-//add box-shadow to header when scrolling
+//* add box-shadow to header when scrolling functionality
 $(window).scroll(() => {
     $(this).scrollTop() > 0 ? $('.navbar').addClass('navbar_shadow') : $('.navbar').removeClass('navbar_shadow');
 });
 
-//hover list header
+//* hover list header functionality
 $(document).ready(function () {
     $('.navbar-light .dmenu').hover(
         function () {
@@ -15,7 +15,7 @@ $(document).ready(function () {
     );
 });
 
-//to top button
+//* to top button functionality
 $(function () {
     // previous detection logic
     $('.to-top-btn').on('click', function () {
@@ -30,14 +30,14 @@ $(function () {
 
 $(document).ready(function () {
     // Assign some jquery elements we'll need
-    var $swiper = $('.swiper-container');
-    var $bottomSlide = null; // Slide whose content gets 'extracted' and placed
+    const $swiper = $('.swiper-container');
+    const $bottomSlide = null; // Slide whose content gets 'extracted' and placed
     // into a fixed position for animation purposes
-    var $bottomSlideContent = null; // Slide content that gets passed between the
+    const $bottomSlideContent = null; // Slide content that gets passed between the
     // panning slide stack and the position 'behind'
     // the stack, needed for correct animation style
 
-    var mySwiper = new Swiper('.swiper-container', {
+    const mySwiper = new Swiper('.swiper-container', {
         spaceBetween: 20,
         slidesPerView: 3,
         centeredSlides: true,
@@ -48,5 +48,78 @@ $(document).ready(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+});
+
+//* Giai Phap Tong The form section
+$(document).ready(() => {
+    $('.giai-phap-tong-the-section .label').each(function (index) {
+        $(this).click(() => {
+            $('.giai-phap-tong-the-section .label').removeClass('selected');
+            document.querySelector('.giai-phap-tong-the-section .list.list-selected').classList.remove('list-selected');
+
+            $(this).addClass('selected');
+            document.querySelectorAll('.giai-phap-tong-the-section .list')[index].classList.add('list-selected');
+        });
+    });
+});
+
+//* Thong tin bao chi section
+$(document).ready(() => {
+    const NewspaperInfo = [
+        {
+            content: ['Thương hiệu mạnh giúp doanh nghiệp tăng lợi thế cạnh tranh'],
+        },
+        {
+            content: ['Sao Kim Branding - 15 năm nâng tầm thương hiệu Việt'],
+        },
+        {
+            content: ['Sao Kim Branding - Xây dựng thương hiệu doanh nghiệp theo mô hình Corporate Branding'],
+        },
+        {
+            content: ['Bài toán trong xây dựng thương hiệu theo mô hình Corporate Branding'],
+        },
+        {
+            content: ['4 Bước giúp doanh nghiệp xây dựng thương hiệu'],
+        },
+        {
+            content: ['9 việc Brand manager cần quan tâm trong năm 2021'],
+        },
+        {
+            content: ['Thương hiệu số là gì và vai trò của nó'],
+        },
+        {
+            content: [
+                '9 việc Brand manager cần quan tâm trong 2021',
+                'Xây dựng thương hiệu, cửa sáng tương lai ngành nông sản',
+                'Top 13 website thiết kế logo nhất định nên thử',
+                'Digital Branding: Thương hiệu Việt và cuộc chiến khẳng định vị thế trong kỷ nguyên số',
+                'Digital Branding: Thương hiệu Việt và cuộc chiến khẳng định vị thế trong kỷ nguyên số',
+                'Thương hiệu số là gì và vai trò của nó',
+                'Thiết kế profile công ty một cách chuyên nghiệp, tất cả những gì bạn cần biết!',
+                '6 bước nâng cao trải nghiệm thương hiệu trên nền tảng số',
+                '12 cách dùng màu sắc để “phù phép” cho website (tất cả các ngành hàng)',
+            ],
+        },
+        {
+            content: ['CEO Nguyễn Thanh Tuấn: Khởi nghiệp tinh gọn'],
+        },
+    ];
+
+    $('.newspapers-info-section img').each(function (index) {
+        $(this).click(() => {
+            //* change the opacity logo
+            $('.newspapers-info-section .img_selected').removeClass('img_selected');
+            $(this).addClass('img_selected');
+            const newLeft = document.querySelector('.newspapers-info-section .img_selected').offsetLeft;
+            const newWidth = document.querySelector('.newspapers-info-section .img_selected').offsetWidth;
+
+            $('.newspapers-info-section .line').css('left', `${newLeft}px`)
+            $('.newspapers-info-section .line').css('width', `${newWidth}px`)
+
+            //* change the text content below
+            const text = NewspaperInfo[index].content.map((item) => `<li class="col-5">${item}</li>`);
+            $('.newspapers-info-section ul').html(text);
+        });
     });
 });

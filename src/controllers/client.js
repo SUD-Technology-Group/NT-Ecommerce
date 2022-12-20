@@ -1,4 +1,13 @@
-const { introduce, albumList, projectTypeList, serviceList, customerReactionList } = require('../data/mock');
+const {
+    introduce,
+    albumList,
+    projectTypeList,
+    serviceList,
+    customerReactionList,
+    FullSolution,
+    SolutionAccordingToField,
+    NewspaperInfo,
+} = require('../data/mock');
 
 const baseURL = 'client/pages/';
 
@@ -12,6 +21,9 @@ const clientController = {
             projectTypeList: projectTypeList,
             serviceList: serviceList,
             customerReactionList: customerReactionList,
+            FullSolution,
+            SolutionAccordingToField,
+            NewspaperInfo,
         });
     },
 

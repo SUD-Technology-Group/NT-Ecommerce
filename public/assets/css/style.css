@@ -317,6 +317,67 @@ figure:hover .album__image {
     background-size: auto 100%;
 }
 
+.giai-phap-tong-the-section .label {
+    background-color: #f4f6fe;
+}
+
+.giai-phap-tong-the-section .selected a {
+    color: #ffffff;
+}
+
+.giai-phap-tong-the-section .selected {
+    background-color: #003189;
+}
+
+.giai-phap-tong-the-section .title {
+    color: #003189;
+}
+
+.giai-phap-tong-the-section .title:hover {
+    transition: all 0.5s;
+    color: #fc9200;
+}
+
+.giai-phap-tong-the-section .list {
+    display: none;
+}
+
+.giai-phap-tong-the-section .list-selected {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.newspapers-info-section .content_below {
+    background-color: #f4f6fe;
+}
+
+.newspapers-info-section .content_below ul > li {
+    color: var(--primary-main);
+    font-weight: bold;
+    line-height: 24px;
+    font-size: medium;
+}
+
+.newspapers-info-section img {
+    opacity: 0.5;
+}
+
+.newspapers-info-section .img_selected {
+    opacity: 1;
+}
+
+.newspapers-info-section .line {
+    position: absolute;
+    left: 4px;
+    top: 56px;
+    width: 100px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+}
+
 /* Start project page */
 .project-section {
     margin-top: 100px;

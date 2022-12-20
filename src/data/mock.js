@@ -207,10 +207,149 @@ const customerReactionList = [
     },
 ];
 
+const FullSolution = [
+    {
+        left: {
+            icon: '<i class="fa-solid fa-house fs-1" style="color: #003189;"></i>',
+        },
+        right: {
+            heading: 'Business ID',
+            description: 'Thiết kế thương hiệu doanh nghiệp tiêu chuẩn',
+        },
+    },
+    {
+        left: {
+            icon: '<i class="fa-sharp fa-solid fa-file-signature fs-1" style="color: #003189;"></i>',
+        },
+        right: {
+            heading: 'Corporate ID',
+            description: 'Thiết kế hệ thống nhận diện thương hiệu',
+        },
+    },
+    {
+        left: {
+            icon: '<i class="fa-solid fa-shapes fs-1" style="color: #003189;"></i>',
+        },
+        right: {
+            heading: 'SME Branding',
+            description: 'Giải pháp thương hiệu cho doanh nghiệp SME',
+        },
+    },
+    {
+        left: {
+            icon: '<i class="fa-solid fa-plane fs-1" style="color: #003189;"></i>',
+        },
+        right: {
+            heading: 'Corporate Branding',
+            description: 'Giải pháp xây dựng thương hiệu tổng công ty, tập đoàn',
+        },
+    },
+    {
+        left: {
+            icon: '<i class="fa-solid fa-chart-simple fs-1" style="color: #003189;"></i>',
+        },
+        right: {
+            heading: 'Marketing KIT',
+            description: 'Giải pháp chăm sóc thương hiệu toàn diện',
+        },
+    },
+    {
+        left: {
+            icon: '<i class="fa-brands fa-digital-ocean fs-1" style="color: #003189;"></i>',
+        },
+        right: {
+            heading: 'Digital KIT',
+            description: 'Nền tảng xây dựng thương hiệu trực tuyến',
+        },
+    },
+    {
+        left: {
+            icon: '<i class="fa-brands fa-slack fs-1" style="color: #003189;"></i>',
+        },
+        right: {
+            heading: 'BrandCom',
+            description: 'Giải pháp truyền thông thương hiệu doanh nghiệp',
+        },
+    },
+    {
+        left: {
+            icon: '<i class="fa-brands fa-r-project fs-1" style="color: #003189;"></i>',
+        },
+        right: {
+            heading: 'Project Branding',
+            description: 'Giải pháp xây dựng thương hiệu cho dự án mới',
+        },
+    },
+];
+
+const SolutionAccordingToField = {
+    heading:
+        'Các giải pháp xây dựng thương hiệu được Sao Kim thiết kế chi tiết, may đo cho từng doanh nghiệp trong các lĩnh vực kinh doanh cụ thể:',
+    content: [
+        {
+            left: '<i class="fa-solid fa-gear fs-1" style="color: #003189;"></i>',
+            right: 'Giải Pháp thương hiệu ngành Xây dựng',
+        },
+        {
+            left: '<i class="fa-solid fa-plane fs-1" style="color: #003189;"></i>',
+            right: 'Giải Pháp thương hiệu ngành Du lịch',
+        },
+        {
+            left: '<i class="fa-solid fa-building fs-1" style="color: #003189;"></i>',
+            right: 'Giải Pháp thương hiệu ngành F&B',
+        },
+        {
+            left: '<i class="fa-solid fa-pills fs-1" style="color: #003189;"></i>',
+            right: 'Giải Pháp thương hiệu ngành Sức khoẻ',
+        },
+        {
+            left: '<i class="fa-solid fa-coins fs-1" style="color: #003189;"></i>',
+            right: 'Giải Pháp thương hiệu ngành Tài chính',
+        },
+        {
+            left: '<i class="fa-solid fa-cart-shopping fs-1" style="color: #003189;"></i>',
+            right: 'Giải Pháp thương hiệu ngành Bán lẻ',
+        },
+    ],
+};
+
+const NewspaperInfo = [
+    {
+        logo: '<img class="img_selected" width="100px" src="https://www.saokim.com.vn/storage/2022/08/vnexpress-logo-2.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
+    },
+    {
+        logo: '<img width="100px" src="https://www.saokim.com.vn/storage/2022/08/cafef-logo-2.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
+    },
+    {
+        logo: '<img width="100px" src="https://www.saokim.com.vn/storage/2022/08/vtv-news-logo-1.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
+    },
+    {
+        logo: '<img width="100px" src="https://www.saokim.com.vn/storage/2022/08/vneconomy-logo-1.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
+    },
+    {
+        logo: '<img width="100px" src="https://www.saokim.com.vn/storage/2022/08/vietnamnet-logo.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
+    },
+    {
+        logo: '<img width="100px" src="https://www.saokim.com.vn/storage/2022/08/cafebiz-logo.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
+    },
+    {
+        logo: '<img width="100px" src="https://www.saokim.com.vn/storage/2022/08/Dan-Tri-Logo.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
+    },
+    {
+        logo: '<img width="100px" src="https://www.saokim.com.vn/storage/2022/08/Brands-Vietnam-Logo.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
+    },
+    {
+        logo: '<img width="100px" src="https://www.saokim.com.vn/storage/2022/08/VITV-Logo.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
+    },
+];
+
 module.exports = {
     introduce,
     albumList,
     projectTypeList,
     serviceList,
     customerReactionList,
+    FullSolution,
+    SolutionAccordingToField,
+    NewspaperInfo,
 };
