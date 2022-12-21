@@ -116,23 +116,23 @@ footer a:hover {
     margin-top: 10rem;
 }
 
-.swiper-container {
+.khach-hang-noi-ve-NTEcommerce .swiper-container {
     position: relative;
     width: 100%;
     height: 500px;
 }
 
-.swiper-container > .swiper-slide__content {
+.khach-hang-noi-ve-NTEcommerce > .swiper-container > .swiper-slide__content {
     position: absolute;
     top: 0;
 }
 
-.swiper {
+.khach-hang-noi-ve-NTEcommerce .swiper {
     width: 100%;
     height: 500px;
 }
 
-.swiper-slide {
+.khach-hang-noi-ve-NTEcommerce .swiper-slide {
     text-align: center;
     font-size: 18px;
     border-radius: 25px;
@@ -144,17 +144,17 @@ footer a:hover {
     transform: scale(0.8) !important;
     transition: all 200ms linear;
 }
-.swiper-slide + .swiper-slide-active {
+.khach-hang-noi-ve-NTEcommerce .swiper-slide + .swiper-slide-active {
     transform: scale(1) !important;
     background: var(--primary-light);
 }
 
-.swiper-slide__content {
+.khach-hang-noi-ve-NTEcommerce .swiper-slide__content {
     height: 500px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.khach-hang-noi-ve-NTEcommerce .swiper-button-next,
+.khach-hang-noi-ve-NTEcommerce .swiper-button-prev {
     right: 5px;
     color: #000 !important;
     fill: black !important;
@@ -317,6 +317,67 @@ figure:hover .album__image {
     background-size: auto 100%;
 }
 
+.giai-phap-tong-the-section .label {
+    background-color: #f4f6fe;
+}
+
+.giai-phap-tong-the-section .selected a {
+    color: #ffffff;
+}
+
+.giai-phap-tong-the-section .selected {
+    background-color: #003189;
+}
+
+.giai-phap-tong-the-section .title {
+    color: #003189;
+}
+
+.giai-phap-tong-the-section .title:hover {
+    transition: all 0.5s;
+    color: #fc9200;
+}
+
+.giai-phap-tong-the-section .list {
+    display: none;
+}
+
+.giai-phap-tong-the-section .list-selected {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.newspapers-info-section .content_below {
+    background-color: #f4f6fe;
+}
+
+.newspapers-info-section .content_below ul > li {
+    color: var(--primary-main);
+    font-weight: bold;
+    line-height: 24px;
+    font-size: medium;
+}
+
+.newspapers-info-section img {
+    opacity: 0.5;
+}
+
+.newspapers-info-section .img_selected {
+    opacity: 1;
+}
+
+.newspapers-info-section .line {
+    position: absolute;
+    left: 4px;
+    top: 56px;
+    width: 100px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+}
+
 /* Start project page */
 .project-section {
     margin-top: 100px;
@@ -327,6 +388,20 @@ figure:hover .album__image {
     height: 574px;
     object-fit: cover;
     vertical-align: middle;
+}
+
+.logo-design-process-section .content_left::after {
+    position: absolute;
+    content: ' ';
+    bottom: -66px;
+    left: 27px;
+    background-color: #000;
+    width: 1px;
+    height: 50px;
+}
+
+.logo-design-process-section .content_container:last-child .content_left::after {
+    background-color: transparent;
 }
 
 /* End project page */

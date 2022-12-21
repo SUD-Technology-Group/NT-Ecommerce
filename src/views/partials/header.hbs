@@ -1,37 +1,37 @@
-<nav class='navbar navbar-expand-sm navbar-light fixed-top'>
-    <a class='navbar-brand ms-4' href='/'>
-        Logo
+<nav class="navbar navbar-expand-sm navbar-light fixed-top">
+    <a class="navbar-brand ms-4" href="/">
+        <img style="height: 62px;" src="./assets/images/logo.png" alt="logo" />
     </a>
     <button
-        class='navbar-toggler'
-        type='button'
-        data-toggle='collapse'
-        data-target='#navbarTogglerDemo03'
-        aria-controls='navbarTogglerDemo03'
-        aria-expanded='false'
-        aria-label='Toggle navigation'
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
     >
-        <span class='navbar-toggler-icon'></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class='collapse navbar-collapse justify-content-center' id='navbarTogglerDemo03'>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
         {{#each list}}
-            <ul class='navbar-nav mr-4 mt-2 mt-lg-0'>
-                <li class='nav-item dropdown dmenu'>
-                    <a class='nav-link dropdown-toggle' href='#' id='navbardrop' data-toggle='dropdown'>
+            <ul class="navbar-nav mr-4 mt-2 mt-lg-0">
+                <li class="nav-item dropdown dmenu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                         {{this.title}}
                     </a>
-                    <div class='dropdown-menu sm-menu p-0 overflow-hidden'>
+                    <div class="dropdown-menu sm-menu p-0 overflow-hidden">
                         {{#each item}}
-                            <a class='dropdown-item' href='{{this.href}}'>{{this.title}}</a>
+                            <a class="dropdown-item" href="{{this.href}}">{{this.title}}</a>
                         {{/each}}
                     </div>
                 </li>
             </ul>
         {{/each}}
     </div>
-    <div class='social-part'>
-        <i class='fa fa-facebook' aria-hidden='true'></i>
-        <i class='fa fa-twitter' aria-hidden='true'></i>
-        <i class='fa fa-instagram' aria-hidden='true'></i>
+    <div class="social-part">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
     </div>
 </nav>
