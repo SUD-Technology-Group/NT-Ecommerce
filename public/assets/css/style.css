@@ -116,23 +116,23 @@ footer a:hover {
     margin-top: 10rem;
 }
 
-.swiper-container {
+.khach-hang-noi-ve-NTEcommerce .swiper-container {
     position: relative;
     width: 100%;
     height: 500px;
 }
 
-.swiper-container > .swiper-slide__content {
+.khach-hang-noi-ve-NTEcommerce > .swiper-container > .swiper-slide__content {
     position: absolute;
     top: 0;
 }
 
-.swiper {
+.khach-hang-noi-ve-NTEcommerce .swiper {
     width: 100%;
     height: 500px;
 }
 
-.swiper-slide {
+.khach-hang-noi-ve-NTEcommerce .swiper-slide {
     text-align: center;
     font-size: 18px;
     border-radius: 25px;
@@ -144,17 +144,17 @@ footer a:hover {
     transform: scale(0.8) !important;
     transition: all 200ms linear;
 }
-.swiper-slide + .swiper-slide-active {
+.khach-hang-noi-ve-NTEcommerce .swiper-slide + .swiper-slide-active {
     transform: scale(1) !important;
     background: var(--primary-light);
 }
 
-.swiper-slide__content {
+.khach-hang-noi-ve-NTEcommerce .swiper-slide__content {
     height: 500px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.khach-hang-noi-ve-NTEcommerce .swiper-button-next,
+.khach-hang-noi-ve-NTEcommerce .swiper-button-prev {
     right: 5px;
     color: #000 !important;
     fill: black !important;
@@ -388,6 +388,20 @@ figure:hover .album__image {
     height: 574px;
     object-fit: cover;
     vertical-align: middle;
+}
+
+.logo-design-process-section .content_left::after {
+    position: absolute;
+    content: ' ';
+    bottom: -66px;
+    left: 27px;
+    background-color: #000;
+    width: 1px;
+    height: 50px;
+}
+
+.logo-design-process-section .content_container:last-child .content_left::after {
+    background-color: transparent;
 }
 
 /* End project page */

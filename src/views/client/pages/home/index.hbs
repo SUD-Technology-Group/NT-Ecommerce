@@ -228,6 +228,57 @@
         </div>
     </div>
 </section>
+
+<section class='section logo-design-process-section'>
+    <div class="container d-flex flex-column gap-5">
+        <div class="text-center">
+            <h2 class='heading-section text-center mb-5'>Quy trình thiết kế Logo tại Sao Kim</h2>
+            <p>Tại Sao Kim, chúng tôi áp dụng quy trình thiết kế logo & sáng tạo khoa học để đảm bảo mang lại sự thành công cho dự án của bạn</p>
+        </div>
+        {{#each logoProcess}}
+            <div class="content_container d-flex align-items-center justify-content-center gap-5">
+                <aside class="content_left d-flex flex-column align-items-center position-relative">
+                    <p class="m-0 fw-semibold">BƯỚC</p>
+                    <strong class="fs-2 py-2 px-4 rounded" style="background-color: #fa8a1a;">{{this.step}}</strong>
+                </aside>
+                <aside class="w-50 border border-2 rounded p-4 fs-6">
+                    <strong class="link-warning">{{this.heading}}</strong>
+                    <p class="mt-2">{{this.content}}</p>
+                </aside>
+            </div>
+        {{/each}}
+    </div>
+</section>
+
+<section class="section cooperate-customer-section">
+    <div class="container">
+        <div>
+            <h2 class='heading-section text-center mb-5'>Khách hàng đã tin tưởng hợp tác cùng Sao Kim</h2>
+        </div>
+        <div>
+            <div class="swiper logo-cooperate-section">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide row row-cols-6">
+                        {{#each cooperateLogo}}
+                            {{#each this.slide1 as |item|}}
+                                <img src={{item}} alt="cooperate logo">
+                            {{/each}}
+                        {{/each}}
+                    </div>
+                    <div class="swiper-slide row row-cols-6">
+                        {{#each cooperateLogo}}
+                            {{#each this.slide2 as |item|}}
+                                <img src={{item}} alt="cooperate logo">
+                            {{/each}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-2"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="container new-section">
     {{> info-register }}
 </div>

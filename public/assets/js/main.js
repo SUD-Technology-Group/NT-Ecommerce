@@ -1,10 +1,10 @@
-//* add box-shadow to header when scrolling functionality
-$(window).scroll(() => {
-    $(this).scrollTop() > 0 ? $('.navbar').addClass('navbar_shadow') : $('.navbar').removeClass('navbar_shadow');
-});
-
-//* hover list header functionality
 $(document).ready(function () {
+    //* add box-shadow to header when scrolling functionality
+    $(window).scroll(() => {
+        $(this).scrollTop() > 0 ? $('.navbar').addClass('navbar_shadow') : $('.navbar').removeClass('navbar_shadow');
+    });
+
+    //* hover list header functionality
     $('.navbar-light .dmenu').hover(
         function () {
             $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
@@ -13,22 +13,19 @@ $(document).ready(function () {
             $(this).find('.sm-menu').first().stop(true, true).slideUp(105);
         },
     );
-});
 
-//* to top button functionality
-$(function () {
-    // previous detection logic
-    $('.to-top-btn').on('click', function () {
-        $('html, body').animate(
-            {
-                scrollTop: 0,
-            },
-            200,
-        );
+    //* to top button functionality
+    $(function () {
+        // previous detection logic
+        $('.to-top-btn').on('click', function () {
+            $('html, body').animate(
+                {
+                    scrollTop: 0,
+                },
+                200,
+            );
+        });
     });
-});
-
-$(document).ready(function () {
     // Assign some jquery elements we'll need
     const $swiper = $('.swiper-container');
     const $bottomSlide = null; // Slide whose content gets 'extracted' and placed
@@ -49,10 +46,8 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
     });
-});
 
-//* Giai Phap Tong The form section
-$(document).ready(() => {
+    //* Giai Phap Tong The form section
     $('.giai-phap-tong-the-section .label').each(function (index) {
         $(this).click(() => {
             $('.giai-phap-tong-the-section .label').removeClass('selected');
@@ -62,10 +57,8 @@ $(document).ready(() => {
             document.querySelectorAll('.giai-phap-tong-the-section .list')[index].classList.add('list-selected');
         });
     });
-});
 
-//* Thong tin bao chi section
-$(document).ready(() => {
+    //* Thong tin bao chi section
     const NewspaperInfo = [
         {
             content: ['Thương hiệu mạnh giúp doanh nghiệp tăng lợi thế cạnh tranh'],
@@ -114,12 +107,29 @@ $(document).ready(() => {
             const newLeft = document.querySelector('.newspapers-info-section .img_selected').offsetLeft;
             const newWidth = document.querySelector('.newspapers-info-section .img_selected').offsetWidth;
 
-            $('.newspapers-info-section .line').css('left', `${newLeft}px`)
-            $('.newspapers-info-section .line').css('width', `${newWidth}px`)
+            $('.newspapers-info-section .line').css('left', `${newLeft}px`);
+            $('.newspapers-info-section .line').css('width', `${newWidth}px`);
 
             //* change the text content below
             const text = NewspaperInfo[index].content.map((item) => `<li class="col-5">${item}</li>`);
             $('.newspapers-info-section ul').html(text);
         });
+    });
+
+    // * logo cooperate company section
+    const swiper = new Swiper('.logo-cooperate-section', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            autoplay: true,
+            delay: 5000,
+        },
+        keyboard: {
+            keyboard: true,
+            enabled: true,
+            onlyInViewport: false,
+        },
     });
 });

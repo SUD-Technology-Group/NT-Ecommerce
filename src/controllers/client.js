@@ -7,6 +7,8 @@ const {
     FullSolution,
     SolutionAccordingToField,
     NewspaperInfo,
+    logoProcess,
+    cooperateLogo,
 } = require('../data/mock');
 
 const baseURL = 'client/pages/';
@@ -24,6 +26,8 @@ const clientController = {
             FullSolution,
             SolutionAccordingToField,
             NewspaperInfo,
+            logoProcess,
+            cooperateLogo,
         });
     },
 

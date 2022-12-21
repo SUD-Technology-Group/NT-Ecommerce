@@ -343,6 +343,101 @@ const NewspaperInfo = [
     },
 ];
 
+const logoProcess = [
+    {
+        step: 1,
+        heading: 'TIẾP NHẬN & KÝ KẾT',
+        content:
+            'Sao Kim tiếp nhận yêu cầu, tìm hiểu mục tiêu dự án và tư vấn chi tiết về dịch vụ. Tiến hành báo giá dịch vụ thiết kế logo, ký kết hợp đồng.',
+    },
+    {
+        step: 2,
+        heading: 'NGHIÊN CỨU',
+        content:
+            'Nghiên cứu 4Cs: Doanh nghiệp, Thị trường/ Ngành nghề, Khách hàng mục tiêu/ người tiêu dùng và đối thủ cạnh tranh để có dữ liệu cho các quyết định khác biệt hóa. Tìm kiếm kết nối tự nhiên giữa thương hiệu và khách hàng mục tiêu.',
+    },
+    {
+        step: 3,
+        heading: 'TƯ VẤN THƯƠNG HIỆU',
+        content:
+            'Tư vấn tổng quan về giải pháp xây dựng thương hiệu cho doanh nghiệp. Định hình chiến lược thương hiệu và đề xuất giải pháp thiết kế logo phản ánh chiến lược thương hiệu.',
+    },
+    {
+        step: 4,
+        heading: 'THIẾT KẾ & SÁNG TẠO',
+        content:
+            'Phác thảo các ý tưởng thiết kế, kiểm tra và tiến hành thiết kế các phương án logo hoàn chỉnh dựa theo bản nghiên cứu, định hướng.',
+    },
+    {
+        step: 5,
+        heading: 'TRÌNH BÀY & HIỆU CHỈNH',
+        content:
+            'Sao Kim tiến hành gửi các phương án và trình bày ý tưởng để tiếp nhận phản hồi từ phía doanh nghiệp. Tiến hành hiệu chỉnh phù hơp nhằm đạt mục tiêu cuối cùng.',
+    },
+    {
+        step: 6,
+        heading: 'ĐÓNG GÓI SẢN PHẨM',
+        content:
+            'Dựa trên sự thống nhất, Sao Kim tiến hành hoàn thiện các hạng mục liên quan, đóng gói sản phẩm thiết kế logo, logo guideline',
+    },
+    {
+        step: 7,
+        heading: 'BÀN GIAO & NGHIỆM THU',
+        content:
+            'Sao Kim phối hợp cùng doanh nghiệp tiến hành bàn giao và nghiệm thu các hạng mục thiết kế theo hợp đồng ký kết',
+    },
+    {
+        step: 8,
+        heading: 'ĐỒNG HÀNH PHÁT TRIỂN',
+        content:
+            'Hỗ trợ tư vấn doanh nghiệp triển khai xây dựng nhận diện thương hiệu. Đồng hành cùng với doanh nghiệp trong hoạt động xây dựng thương hiệu và phát triển doanh nghiệp.',
+    },
+];
+
+const cooperateLogo = [
+    {
+        slide1: [
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-1-nike.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-2-viags.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-3-tng.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-4-habeco.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-5-sabeco.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-6-vnpt.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-7-petrolimex.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-8-vingroup.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-9-delta.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-10-coteccons.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-11-cc1.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-12-deoca.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-13-vietnam-airlines.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-14-agribank.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-15-vietcombank.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-16-fujitsu.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-17-flc-group.png',
+        ],
+        slide2: [
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-18-austdoor.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-19-mb-land.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-20-vinaconex.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-21-fecon.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-22-th.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-23-dam-ca-mau.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-24-uni-president.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-25-viettel.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-26-fpt.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-27-dat-xanh-group.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-28-msb.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-29-mobifone.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-30-Bao-Viet-Bank.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-31-Vinhome.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-32-Sonha.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-33-tonkin-land.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-34-scqc2.png',
+            'https://www.saokim.com.vn/wp-content/uploads/2022/01/khach-hang-cua-sao-kim-35-iff-holdings.png',
+        ],
+    },
+];
+
 module.exports = {
     introduce,
     albumList,
@@ -352,4 +447,6 @@ module.exports = {
     FullSolution,
     SolutionAccordingToField,
     NewspaperInfo,
+    logoProcess,
+    cooperateLogo,
 };
