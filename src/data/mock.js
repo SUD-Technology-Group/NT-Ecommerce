@@ -244,42 +244,6 @@ const FullSolution = [
             description: 'Giải pháp xây dựng thương hiệu tổng công ty, tập đoàn',
         },
     },
-    {
-        left: {
-            icon: '<i class="fa-solid fa-chart-simple fs-1" style="color: #003189;"></i>',
-        },
-        right: {
-            heading: 'Marketing KIT',
-            description: 'Giải pháp chăm sóc thương hiệu toàn diện',
-        },
-    },
-    {
-        left: {
-            icon: '<i class="fa-brands fa-digital-ocean fs-1" style="color: #003189;"></i>',
-        },
-        right: {
-            heading: 'Digital KIT',
-            description: 'Nền tảng xây dựng thương hiệu trực tuyến',
-        },
-    },
-    {
-        left: {
-            icon: '<i class="fa-brands fa-slack fs-1" style="color: #003189;"></i>',
-        },
-        right: {
-            heading: 'BrandCom',
-            description: 'Giải pháp truyền thông thương hiệu doanh nghiệp',
-        },
-    },
-    {
-        left: {
-            icon: '<i class="fa-brands fa-r-project fs-1" style="color: #003189;"></i>',
-        },
-        right: {
-            heading: 'Project Branding',
-            description: 'Giải pháp xây dựng thương hiệu cho dự án mới',
-        },
-    },
 ];
 
 const SolutionAccordingToField = {
@@ -301,14 +265,6 @@ const SolutionAccordingToField = {
         {
             left: '<i class="fa-solid fa-pills fs-1" style="color: #003189;"></i>',
             right: 'Giải Pháp thương hiệu ngành Sức khoẻ',
-        },
-        {
-            left: '<i class="fa-solid fa-coins fs-1" style="color: #003189;"></i>',
-            right: 'Giải Pháp thương hiệu ngành Tài chính',
-        },
-        {
-            left: '<i class="fa-solid fa-cart-shopping fs-1" style="color: #003189;"></i>',
-            right: 'Giải Pháp thương hiệu ngành Bán lẻ',
         },
     ],
 };
@@ -341,6 +297,15 @@ const NewspaperInfo = [
     {
         logo: '<img width="100px" src="https://www.saokim.com.vn/storage/2022/08/VITV-Logo.png" alt="Cooperate logo" title="Ảnh bài viết từ trang chủ">',
     },
+];
+
+const ecosystem = [
+    'https://www.saokim.com.vn/wp-content/uploads/2022/01/saokim-logo.svg',
+    'https://www.saokim.com.vn/wp-content/uploads/2022/01/saokim-logo.svg',
+    'https://www.saokim.com.vn/wp-content/uploads/2022/01/saokim-logo.svg',
+    'https://www.saokim.com.vn/wp-content/uploads/2022/01/logoart-logo.svg',
+    'https://www.saokim.com.vn/wp-content/uploads/2022/01/brandcare-logo.svg',
+    'https://www.saokim.com.vn/wp-content/uploads/2022/01/elita.svg',
 ];
 
 const logoProcess = [
@@ -447,6 +412,7 @@ module.exports = {
     FullSolution,
     SolutionAccordingToField,
     NewspaperInfo,
+    ecosystem,
     logoProcess,
     cooperateLogo,
 };

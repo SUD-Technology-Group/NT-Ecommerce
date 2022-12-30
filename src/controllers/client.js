@@ -7,6 +7,7 @@ const {
     FullSolution,
     SolutionAccordingToField,
     NewspaperInfo,
+    ecosystem,
     logoProcess,
     cooperateLogo,
 } = require('../data/mock');
@@ -26,6 +27,7 @@ const clientController = {
             FullSolution,
             SolutionAccordingToField,
             NewspaperInfo,
+            ecosystem,
             logoProcess,
             cooperateLogo,
         });
