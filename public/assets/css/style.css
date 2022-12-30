@@ -11,6 +11,11 @@
 
     --secondary-text: #2d2d2d;
 }
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 ::selection {
     color: #fee715ff;

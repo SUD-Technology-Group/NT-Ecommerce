@@ -26,26 +26,6 @@ $(document).ready(function () {
             );
         });
     });
-    // Assign some jquery elements we'll need
-    const $swiper = $('.swiper-container');
-    const $bottomSlide = null; // Slide whose content gets 'extracted' and placed
-    // into a fixed position for animation purposes
-    const $bottomSlideContent = null; // Slide content that gets passed between the
-    // panning slide stack and the position 'behind'
-    // the stack, needed for correct animation style
-
-    const mySwiper = new Swiper('.swiper-container', {
-        spaceBetween: 20,
-        slidesPerView: 3,
-        centeredSlides: true,
-        roundLengths: true,
-        loop: true,
-        loopAdditionalSlides: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
 
     //* Giai Phap Tong The form section
     $('.giai-phap-tong-the-section .label').each(function (index) {
@@ -116,20 +96,54 @@ $(document).ready(function () {
         });
     });
 
-    // * logo cooperate company section
-    const swiper = new Swiper('.logo-cooperate-section', {
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        autoplay: {
-            autoplay: true,
-            delay: 5000,
-        },
-        keyboard: {
-            keyboard: true,
-            enabled: true,
-            onlyInViewport: false,
-        },
-    });
+    //! Applying Swiper here
+    try {
+        //* Customer feedback
+        new Swiper('.swiper-container', {
+            spaceBetween: 20,
+            slidesPerView: 1,
+            centeredSlides: true,
+            roundLengths: true,
+            loop: true,
+            loopAdditionalSlides: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        //* logo cooperate company section
+        new Swiper('.logo-cooperate-section', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                autoplay: true,
+                delay: 5000,
+            },
+            keyboard: {
+                keyboard: true,
+                enabled: true,
+                onlyInViewport: false,
+            },
+        });
+
+        //* ecosystem
+        new Swiper('.ecosystem-logo-section', {
+            keyboard: {
+                keyboard: true,
+                enabled: true,
+                onlyInViewport: false,
+            },
+            loop: true,
+        });
+    } catch (error) {
+        console.error(error);
+    }
 });

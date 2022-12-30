@@ -51,8 +51,8 @@
 <section class="section giai-phap-tong-the-section">
     <div class="container d-flex flex-column">
         <h1 class='heading-section text-center mb-4'>Giải pháp tổng thể</h1>
-        <div class='row'>
-            <div class='col-4'>
+        <div class='d-md-flex flex-sm-column align-items-sm-center flex-lg-row align-items-lg-start gap-5'>
+            <div class='col-lg-4'>
                 <div class="mb-4 p-3 rounded label selected">
                     <a class="fw-bold" style="pointer-events: none">Giải pháp trọn gói</a>
                 </div>
@@ -60,8 +60,8 @@
                     <a class="fw-bold" style="pointer-events: none">Giải pháp theo lĩnh vực kinh doanh</a>
                 </div>
             </div>
-            <div class='col-8'>
-                <div class="row p-4" style="background-color: #f4f6fe; height: 44rem;">
+            <div class='col-lg-8'>
+                <div class="row p-4" style="background-color: #f4f6fe; height: 34rem">
                     <aside class="col-4">
                         <img class="w-100" src="https://www.saokim.com.vn/wp-content/uploads/2022/01/image-tab.png" alt="left side">
                     </aside>
@@ -101,7 +101,6 @@
             </div>
         </div>
     </div>
-
 </section>
 
 <section class='section khach-hang-noi-ve-NTEcommerce'>
@@ -155,7 +154,7 @@
     <div class='container'>
         <h2 class='heading-section text-center mb-5'>Thông tin báo chí</h2>
         <div>
-            <div class="d-flex justify-content-between my-5 position-relative">
+            <div class="d-flex justify-content-between my-5 position-relative w-100" style="height: 5rem; overflow-x: auto; overflow-y: hidden;">
                 {{#each NewspaperInfo}}
                     <div>
                         {{{this.logo}}}
@@ -170,8 +169,6 @@
             </div>
         </div>
     </div>
-
-
 </section>
 
 
@@ -184,47 +181,20 @@
 <section class='section ecosystem-section'>
     <div class='container'>
         <h2 class='heading-section text-left mb-4'>Hệ sinh thái của NT-Ecommerce</h2>
-        <div class="d-flex flex-row justify-content-between my-5">
-
-            <figure class="gallery-item">
-                <div class="gallery-icon landscape">
-                    <img width="108" height="40" src="https://www.saokim.com.vn/storage/2022/01/saokim-logo.svg"
-                        class="attachment-full size-full" alt="Sao Kim Branding"
-                        title="Ảnh bài viết Trang chủ"></noscript>
+        <div class="swiper ecosystem-logo-section">
+            <div class="swiper-wrapper">
+                <div class="d-flex justify-content-between my-5 swiper-slide">
+                    {{#each ecosystem}}
+                        <figure class="gallery-item">
+                            <div class="gallery-icon landscape">
+                                <img width="108" height="40" src={{this}}
+                                    class="attachment-full size-full" alt="Sao Kim Branding"
+                                    title="Ảnh bài viết Trang chủ"></img>
+                            </div>
+                        </figure>
+                    {{/each}}
                 </div>
-            </figure>
-            <figure class="gallery-item">
-                <div class="gallery-icon landscape">
-                    <img width="108" height="40" src="https://www.saokim.com.vn/storage/2022/01/saokim-digital-logo.svg"
-                        class="attachment-full size-full" alt="Sao Kim Digital"
-                        title="Ảnh bài viết Trang chủ"></noscript>
-                </div>
-            </figure>
-            <figure class="gallery-item">
-                <div class="gallery-icon landscape">
-                    <img width="108" height="40"
-                        src="https://www.saokim.com.vn/storage/2022/01/saokim-pakaging-logo.svg"
-                        class="attachment-full size-full" alt="Sao Kim Packaging"
-                        title="Ảnh bài viết Trang chủ"></noscript>
-                </div>
-            </figure>
-            <figure class="gallery-item">
-                <div class="gallery-icon landscape">
-                    <img width="84" height="25" src="https://www.saokim.com.vn/storage/2022/01/logoart-logo.svg"
-                        class="attachment-full size-full" alt="Logoart" title="Ảnh bài viết Trang chủ"></noscript>
-                </div>
-            </figure>
-            <figure class="gallery-item">
-                <div class="gallery-icon landscape">
-                    <img width="120" height="17" src="https://www.saokim.com.vn/storage/2022/01/brandcare-logo.svg"
-                        class="attachment-full size-full" alt="Brandcare" title="Ảnh bài viết Trang chủ"></noscript>
-                </div>
-            </figure>
-            <figure class="gallery-item">
-                <div class="gallery-icon landscape">
-                    <img width="115" height="45" src="https://www.saokim.com.vn/storage/2022/01/elita.svg"
-                        class="attachment-full size-full" alt="Elita" title="Ảnh bài viết Trang chủ"></noscript>
-                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -255,26 +225,24 @@
         <div>
             <h2 class='heading-section text-center mb-5'>Khách hàng đã tin tưởng hợp tác cùng Sao Kim</h2>
         </div>
-        <div>
-            <div class="swiper logo-cooperate-section">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide row row-cols-6">
-                        {{#each cooperateLogo}}
-                            {{#each this.slide1 as |item|}}
-                                <img src={{item}} alt="cooperate logo">
-                            {{/each}}
+        <div class="swiper logo-cooperate-section">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide row row-cols-6">
+                    {{#each cooperateLogo}}
+                        {{#each this.slide1 as |item|}}
+                            <img src={{item}} alt="cooperate logo">
                         {{/each}}
-                    </div>
-                    <div class="swiper-slide row row-cols-6">
-                        {{#each cooperateLogo}}
-                            {{#each this.slide2 as |item|}}
-                                <img src={{item}} alt="cooperate logo">
-                            {{/each}}
-                        {{/each}}
-                    </div>
+                    {{/each}}
                 </div>
-                <div class="swiper-pagination mt-2"></div>
+                <div class="swiper-slide row row-cols-6">
+                    {{#each cooperateLogo}}
+                        {{#each this.slide2 as |item|}}
+                            <img src={{item}} alt="cooperate logo">
+                        {{/each}}
+                    {{/each}}
+                </div>
             </div>
+            <div class="swiper-pagination mt-2"></div>
         </div>
     </div>
 </section>
